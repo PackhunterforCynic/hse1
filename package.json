@@ -7,8 +7,8 @@
     "dev": "react-router dev",
     "build": "react-router build && node scripts/postbuild.js",
     "lint": "oxlint",
-    "preview": "react-router-serve build/server/index.js",
-    "start": "react-router-serve build/server/index.js",
+    "preview": "vite preview",
+    "start": "vite preview",
     "images": "node scripts/optimize-images.js",
     "images:watch": "node scripts/watch-images.js"
   },
