@@ -1,0 +1,22 @@
+{
+  "title": "Medtouirn",
+  "story": "A compelling showcase of medical innovation and healthcare excellence.",
+  "deliverables": [
+    "Documentary Film",
+    "Photography",
+    "Brand Strategy"
+  ],
+  "heroImage": "https://images.unsplash.com/photo-1516549655169-df83a0774514?q=80&w=2000&auto=format&fit=crop",
+  "heroVideo": "/videos/medtouirn/004.mp4",
+  "credits": {
+    "director": "Praise",
+    "cinematographer": "Praise",
+    "client": "Medtouirn"
+  },
+  "media": [
+    { "type": "video", "src": "/videos/medtouirn/001.mp4", "poster": "https://picsum.photos/seed/med1/1200/800" },
+    { "type": "video", "src": "/videos/medtouirn/002.mp4", "poster": "https://picsum.photos/seed/med2/1200/800" },
+    { "type": "video", "src": "/videos/medtouirn/003.mp4", "poster": "https://picsum.photos/seed/med3/1200/800" },
+    { "type": "video", "src": "/videos/medtouirn/004.mp4", "poster": "https://picsum.photos/seed/med4/1200/800" }
+  ]
+}

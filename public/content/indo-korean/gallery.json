@@ -1,0 +1,86 @@
+{
+  "title": "Indo Korean",
+  "story": "Exploring the rich cultural intersections between India and Korea, this documentary weaves together personal narratives, culinary traditions, and visual artistry into a seamless, cinematic journey.",
+  "deliverables": [
+    "Documentary Film",
+    "Photography",
+    "Brand Strategy"
+  ],
+  "heroVideo": "/videos/indo korean/Indo Korean.mp4",
+  "heroImage": "/images/indo korean/013.webp",
+  "credits": {
+    "director": "Praise",
+    "cinematographer": "Praise",
+    "client": "Cultural Exchange Board"
+  },
+  "media": [
+    {
+      "type": "image",
+      "src": "/images/indo korean/001.webp"
+    },
+    {
+      "type": "image",
+      "src": "/images/indo korean/002.webp"
+    },
+    {
+      "type": "image",
+      "src": "/images/indo korean/003.webp"
+    },
+    {
+      "type": "image",
+      "src": "/images/indo korean/004.webp"
+    },
+    {
+      "type": "image",
+      "src": "/images/indo korean/005.webp"
+    },
+    {
+      "type": "image",
+      "src": "/images/indo korean/006.webp"
+    },
+    {
+      "type": "image",
+      "src": "/images/indo korean/007.webp"
+    },
+    {
+      "type": "image",
+      "src": "/images/indo korean/008.webp"
+    },
+    {
+      "type": "image",
+      "src": "/images/indo korean/009.webp"
+    },
+    {
+      "type": "image",
+      "src": "/images/indo korean/010.webp"
+    },
+    {
+      "type": "image",
+      "src": "/images/indo korean/011.webp"
+    },
+    {
+      "type": "image",
+      "src": "/images/indo korean/012.webp"
+    },
+    {
+      "type": "image",
+      "src": "/images/indo korean/013.webp"
+    },
+    {
+      "type": "image",
+      "src": "/images/indo korean/014.webp"
+    },
+    {
+      "type": "image",
+      "src": "/images/indo korean/015.webp"
+    },
+    {
+      "type": "image",
+      "src": "/images/indo korean/016.webp"
+    },
+    {
+      "type": "image",
+      "src": "/images/indo korean/017.webp"
+    }
+  ]
+}

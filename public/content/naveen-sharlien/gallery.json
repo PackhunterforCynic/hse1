@@ -1,0 +1,685 @@
+{
+  "title": "Naveen Sharlien Wedding",
+  "story": "A beautiful celebration of love. We captured the intimate moments, the grand celebrations, and the raw emotions of Naveen and Sharlien’s special day, creating a cinematic wedding film that they will cherish forever.",
+  "deliverables": [
+    "Wedding Film",
+    "Candid Photography",
+    "Teaser Reel"
+  ],
+  "heroImage": "/images/naveen sharlien/001.png",
+  "heroVideo": "/videos/naveen sharlien/NAVEEN SHARLIEN PHOTOSLIDESHOW.mp4",
+  "credits": {
+    "director": "Praise",
+    "cinematographer": "Praise",
+    "client": "Naveen & Sharlien"
+  },
+  "media": [
+    {
+      "type": "video",
+      "src": "/videos/naveen sharlien/SHARLIEN NAVEEN HALDI.mp4",
+      "poster": "/images/naveen sharlien/Haldi_Ceremony/001.jpg"
+    },
+    {
+      "type": "video",
+      "src": "/videos/naveen sharlien/NAVEEN SHARLIEN PHOTOSLIDESHOW.mp4",
+      "poster": "/images/naveen sharlien/Church/001.jpg"
+    },
+    {
+      "type": "video",
+      "src": "/videos/naveen sharlien/BIKE VINTAGE.mp4",
+      "poster": "https://picsum.photos/seed/bike/1200/800"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/001.png"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/001.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/002.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/003.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/004.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/005.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/006.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/007.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/008.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/009.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/010.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/011.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/012.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/013.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/014.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/015.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/016.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/017.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/018.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/019.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/020.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/021.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/022.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/023.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/024.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/025.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/026.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/027.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/028.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/029.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/030.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/031.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/032.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/033.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/034.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/035.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/036.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/037.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/038.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/039.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/040.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/041.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/042.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/043.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/044.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/045.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/046.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/047.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/048.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/049.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/050.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/051.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/052.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/053.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/054.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/055.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/056.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/057.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/058.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/059.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/060.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/061.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/062.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/063.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/064.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/065.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/066.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/067.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/068.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/069.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/070.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/071.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/072.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/073.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/074.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/075.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Church/076.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/001.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/002.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/003.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/004.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/005.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/006.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/007.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/008.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/009.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/010.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/011.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/012.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/013.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/014.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/015.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/016.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/017.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/018.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/019.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/020.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/021.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/022.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/023.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/024.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/025.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/026.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/027.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/028.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/029.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/030.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/031.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/032.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/033.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/034.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/035.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/036.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/037.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/038.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/039.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/040.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/041.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/042.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/043.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/044.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/045.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/046.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/047.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/048.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/049.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/050.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/051.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/052.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/053.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/054.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/055.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/056.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/057.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/058.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/059.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/060.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/061.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/062.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/063.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/064.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/065.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/066.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/067.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/068.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/069.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/070.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/071.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/072.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/073.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/074.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/075.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/076.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/077.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/078.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/079.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/080.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/081.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/082.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/083.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/084.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/085.jpg"
+    },
+    {
+      "type": "image",
+      "src": "/images/naveen sharlien/Haldi_Ceremony/086.jpg"
+    }
+  ]
+}

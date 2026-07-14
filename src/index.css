@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #0C1220;
+  --color-surface: #151E32;
+  --color-accent: #CFA65B;
+  --color-text: #F3EFE9;
+  --color-secondary: #6B7280;
+
+  --font-display: 'Fraunces', serif;
+  --font-heading: 'Hanken Grotesk', sans-serif;
+  --font-sans: 'Inter', sans-serif;
+  --font-mono: 'Inter', monospace;
+  --font-serif: 'Fraunces', serif;
+}
+
+@layer base {
+  :root {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+  }
+  
+  html, body {
+    font-family: var(--font-sans);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* Custom sleek scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Disable cursor-none classes since custom cursor is removed */
+  .cursor-none {
+    cursor: auto !important;
+  }
+
+  /* Lenis scroll styles */
+  html.lenis, html.lenis body {
+    height: auto;
+  }
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+  .lenis.lenis-smooth [data-scroll-container] {
+    scroll-behavior: auto !important;
+  }
+  .lenis.lenis-scrolling iframe {
+    pointer-events: none;
+  }
+
+  /* Hardware Acceleration for 60fps animations */
+  img, video, canvas, .motion-safe {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform;
+    backface-visibility: hidden;
+  }
+}

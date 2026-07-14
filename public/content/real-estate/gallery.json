@@ -1,0 +1,20 @@
+{
+  "title": "Real Estate",
+  "story": "A premium showcase of modern architectural marvels. We focused on capturing the scale, light, and luxury of these properties using sweeping drone shots and intimate interior details.",
+  "deliverables": [
+    "Commercial Film",
+    "Aerial Photography",
+    "Social Media Reels"
+  ],
+  "heroVideo": "/videos/reaal estate/4Bhk Whitefield Near Metro Station.mp4",
+  "heroImage": "/images/real estate/image.avif",
+  "credits": {
+    "director": "Praise",
+    "cinematographer": "Praise",
+    "client": "Luxury Estates LLC"
+  },
+  "media": [
+    { "type": "video", "src": "/videos/reaal estate/Real Estate Video 720P.mp4", "poster": "/images/real estate/image.avif" }
+   
+  ]
+}
