@@ -148,55 +148,54 @@ export default function Contact() {
             {/* Honeypot Field */}
             <input type="text" {...register('company')} autoComplete="off" style={{ display: 'none' }} tabIndex="-1" />
 
-            <motion.div variants={fadeUpVariant} className="flex flex-col gap-2 relative">
-              <label className="text-xs font-mono tracking-widest uppercase text-text/50">Name *</label>
-              <input {...register('name')} className={`bg-transparent border-b ${errors.name ? 'border-red-500' : 'border-white/20'} py-2 outline-none focus:border-accent transition-colors duration-300 font-sans text-lg cursor-none`} disabled={isSubmitting} onMouseEnter={() => updateCursor({ active: true })} onMouseLeave={resetCursor} />
-              {errors.name && <span className="absolute -bottom-5 left-0 text-[10px] font-mono text-red-500">{errors.name.message}</span>}
+            <motion.div variants={fadeUpVariant} className="flex flex-col gap-2 w-full">
+              <label className="text-xs font-mono tracking-widest uppercase text-text/70 ml-1">Name *</label>
+              <input {...register('name')} className={`w-full bg-white/5 border ${errors.name ? 'border-red-500/50 focus:border-red-500' : 'border-white/10 focus:border-accent/50'} rounded-xl px-4 py-3 outline-none transition-all duration-300 font-sans text-base cursor-none focus:bg-white/10`} disabled={isSubmitting} onMouseEnter={() => updateCursor({ active: true })} onMouseLeave={resetCursor} />
+              {errors.name && <span className="text-[10px] font-mono text-red-400 ml-1 mt-1">{errors.name.message}</span>}
             </motion.div>
             
             <div className="flex flex-col md:flex-row gap-8">
-              <motion.div variants={fadeUpVariant} className="flex flex-col gap-2 w-full relative">
-                <label className="text-xs font-mono tracking-widest uppercase text-text/50">Email *</label>
-                <input type="email" {...register('email')} className={`bg-transparent border-b ${errors.email ? 'border-red-500' : 'border-white/20'} py-2 outline-none focus:border-accent transition-colors duration-300 font-sans text-lg cursor-none`} disabled={isSubmitting} onMouseEnter={() => updateCursor({ active: true })} onMouseLeave={resetCursor} />
-                {errors.email && <span className="absolute -bottom-5 left-0 text-[10px] font-mono text-red-500">{errors.email.message}</span>}
+              <motion.div variants={fadeUpVariant} className="flex flex-col gap-2 w-full">
+                <label className="text-xs font-mono tracking-widest uppercase text-text/70 ml-1">Email *</label>
+                <input type="email" {...register('email')} className={`w-full bg-white/5 border ${errors.email ? 'border-red-500/50 focus:border-red-500' : 'border-white/10 focus:border-accent/50'} rounded-xl px-4 py-3 outline-none transition-all duration-300 font-sans text-base cursor-none focus:bg-white/10`} disabled={isSubmitting} onMouseEnter={() => updateCursor({ active: true })} onMouseLeave={resetCursor} />
+                {errors.email && <span className="text-[10px] font-mono text-red-400 ml-1 mt-1">{errors.email.message}</span>}
               </motion.div>
-              <motion.div variants={fadeUpVariant} className="flex flex-col gap-2 w-full relative">
-                <label className="text-xs font-mono tracking-widest uppercase text-text/50">Phone *</label>
-                <input type="tel" {...register('phone')} className={`bg-transparent border-b ${errors.phone ? 'border-red-500' : 'border-white/20'} py-2 outline-none focus:border-accent transition-colors duration-300 font-sans text-lg cursor-none`} disabled={isSubmitting} onMouseEnter={() => updateCursor({ active: true })} onMouseLeave={resetCursor} />
-                {errors.phone && <span className="absolute -bottom-5 left-0 text-[10px] font-mono text-red-500">{errors.phone.message}</span>}
+              <motion.div variants={fadeUpVariant} className="flex flex-col gap-2 w-full">
+                <label className="text-xs font-mono tracking-widest uppercase text-text/70 ml-1">Phone *</label>
+                <input type="tel" {...register('phone')} className={`w-full bg-white/5 border ${errors.phone ? 'border-red-500/50 focus:border-red-500' : 'border-white/10 focus:border-accent/50'} rounded-xl px-4 py-3 outline-none transition-all duration-300 font-sans text-base cursor-none focus:bg-white/10`} disabled={isSubmitting} onMouseEnter={() => updateCursor({ active: true })} onMouseLeave={resetCursor} />
+                {errors.phone && <span className="text-[10px] font-mono text-red-400 ml-1 mt-1">{errors.phone.message}</span>}
               </motion.div>
             </div>
 
-           <motion.div variants={fadeUpVariant} className="flex flex-col gap-2 relative mt-4">
-              <label className="text-xs font-mono tracking-widest uppercase text-text/50">Service</label>
+           <motion.div variants={fadeUpVariant} className="flex flex-col gap-2 w-full">
+              <label className="text-xs font-mono tracking-widest uppercase text-text/70 ml-1">Service</label>
               <select
                 {...register('service')}
-                className="bg-transparent border-b border-white/20 py-2 outline-none focus:border-accent transition-colors duration-300 font-sans text-lg cursor-none text-white/80"
+                className="w-full bg-white/5 border border-white/10 focus:border-accent/50 rounded-xl px-4 py-3 outline-none transition-all duration-300 font-sans text-base cursor-none focus:bg-white/10 text-white/90 appearance-none"
                 disabled={isSubmitting}
                 onMouseEnter={() => updateCursor({ active: true })}
                 onMouseLeave={resetCursor}
               >
-                <option className="bg-surface">Film Production</option>
-                <option className="bg-surface">Brand Identity</option>
-                <option className="bg-surface">Social Media Marketing</option>
-                <option className="bg-surface">Event Videography</option>
-                <option className="bg-surface">Photography</option>
-                <option className="bg-surface">Cinematography</option>
-                <option className="bg-surface">Live Broadcast</option>
-                <option className="bg-surface">Podcast Setup</option>
-                <option className="bg-surface">Wedding Planning</option>
-                <option className="bg-surface">Corporate Services</option>
-                <option className="bg-surface">IT Firm Solutions</option>
-                <option className="bg-surface">Creative Direction</option>
-                <option className="bg-surface">Other</option>
+                <option className="bg-surface text-white">Film Production</option>
+                <option className="bg-surface text-white">Brand Identity</option>
+                <option className="bg-surface text-white">Social Media Marketing</option>
+                <option className="bg-surface text-white">Event Videography</option>
+                <option className="bg-surface text-white">Photography</option>
+                <option className="bg-surface text-white">Cinematography</option>
+                <option className="bg-surface text-white">Live Broadcast</option>
+                <option className="bg-surface text-white">Podcast Setup</option>
+                <option className="bg-surface text-white">Wedding Planning</option>
+                <option className="bg-surface text-white">Corporate Services</option>
+                <option className="bg-surface text-white">IT Firm Solutions</option>
+                <option className="bg-surface text-white">Creative Direction</option>
+                <option className="bg-surface text-white">Other</option>
               </select>
             </motion.div>
 
-
-            <motion.div variants={fadeUpVariant} className="flex flex-col gap-2 relative mt-4">
-              <label className="text-xs font-mono tracking-widest uppercase text-text/50">Message *</label>
-              <textarea {...register('message')} rows="4" className={`bg-transparent border-b ${errors.message ? 'border-red-500' : 'border-white/20'} py-2 outline-none focus:border-accent transition-colors duration-300 font-sans text-lg resize-none cursor-none`} disabled={isSubmitting} onMouseEnter={() => updateCursor({ active: true })} onMouseLeave={resetCursor}></textarea>
-              {errors.message && <span className="absolute -bottom-5 left-0 text-[10px] font-mono text-red-500">{errors.message.message}</span>}
+            <motion.div variants={fadeUpVariant} className="flex flex-col gap-2 w-full">
+              <label className="text-xs font-mono tracking-widest uppercase text-text/70 ml-1">Message *</label>
+              <textarea {...register('message')} rows="4" className={`w-full bg-white/5 border ${errors.message ? 'border-red-500/50 focus:border-red-500' : 'border-white/10 focus:border-accent/50'} rounded-xl px-4 py-3 outline-none transition-all duration-300 font-sans text-base resize-none cursor-none focus:bg-white/10`} disabled={isSubmitting} onMouseEnter={() => updateCursor({ active: true })} onMouseLeave={resetCursor}></textarea>
+              {errors.message && <span className="text-[10px] font-mono text-red-400 ml-1 mt-1">{errors.message.message}</span>}
             </motion.div>
 
             <motion.button variants={fadeUpVariant} type="submit" disabled={isSubmitting} className="mt-10 px-12 py-5 bg-text text-bg rounded-full font-mono tracking-widest uppercase text-sm font-medium md:hover:bg-accent disabled:opacity-50 disabled:cursor-not-allowed transition-colors duration-500 cursor-none w-max flex items-center gap-3" onMouseEnter={() => !isSubmitting && updateCursor({ active: true })} onMouseLeave={resetCursor}>
