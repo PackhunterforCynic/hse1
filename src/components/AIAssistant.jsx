@@ -17,10 +17,24 @@ export default function AIAssistant() {
     }
   });
 
+  const isDragging = React.useRef(false);
+
+  const handleDragStart = () => {
+    isDragging.current = true;
+  };
+
   const handleDragEnd = (e, info) => {
+    setTimeout(() => { isDragging.current = false; }, 50);
     const newPos = { x: position.x + info.offset.x, y: position.y + info.offset.y };
     setPosition(newPos);
     localStorage.setItem('havilah-ai-pos', JSON.stringify(newPos));
+  };
+
+  const handleToggle = (e) => {
+    e.preventDefault();
+    if (!isDragging.current) {
+      toggleChat();
+    }
   };
 
   return (
@@ -30,6 +44,7 @@ export default function AIAssistant() {
           <motion.div
             drag
             dragMomentum={false}
+            onDragStart={handleDragStart}
             onDragEnd={handleDragEnd}
             animate={{ x: position.x, y: position.y }}
             initial={false}
@@ -38,7 +53,7 @@ export default function AIAssistant() {
             className="fixed bottom-6 right-6 z-[99] cursor-grab active:cursor-grabbing"
           >
             <motion.button
-              onClick={toggleChat}
+              onClick={handleToggle}
               className="relative flex items-center justify-center w-14 h-14 rounded-full bg-black/40 backdrop-blur-xl border border-white/20 text-white shadow-[0_8px_32px_rgba(0,0,0,0.4)]"
               animate={{
                 boxShadow: [
