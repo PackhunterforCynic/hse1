@@ -23,26 +23,34 @@ export default function FeaturedProjects() {
   }, []);
 
   const yOffset = useTransform(scrollYProgress, [0, 1], ["-10%", "10%"]);
+  const headerOpacity = useTransform(scrollYProgress, [0, 0.2], [0, 1]);
+  const featuredX = useTransform(scrollYProgress, [0, 0.25], ["-50vw", "0vw"]);
+  const worksX = useTransform(scrollYProgress, [0, 0.25], ["50vw", "0vw"]);
 
   return (
     <section ref={containerRef} className="py-24 md:py-32 px-4 md:px-8 xl:px-12 bg-bg relative z-10 max-w-[1920px] mx-auto">
-      <div className="flex flex-col md:flex-row justify-between items-end mb-16 md:mb-24 gap-8">
-        <motion.div
-          initial={{ opacity: 0, x: -50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, margin: "-10%" }}
-          transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-        >
-          <h2 className="text-4xl md:text-7xl font-display uppercase tracking-tighter mb-4">Featured<br/><span className="text-accent italic font-serif text-3xl md:text-6xl lowercase tracking-normal">Works</span></h2>
-        </motion.div>
+      <div className="flex flex-col items-center text-center justify-center mb-16 md:mb-24 gap-8">
+        <div className="overflow-hidden w-full flex justify-center">
+          <h2 className="text-6xl md:text-[8vw] font-display uppercase tracking-tighter mb-4 flex flex-col items-center leading-none w-full">
+            <motion.span style={{ x: featuredX, opacity: headerOpacity }}>
+              Featured
+            </motion.span>
+            <motion.span
+              className="text-accent italic font-serif text-5xl md:text-[6vw] lowercase tracking-normal"
+              style={{ x: worksX, opacity: headerOpacity }}
+            >
+              Works
+            </motion.span>
+          </h2>
+        </div>
         
         <motion.div
-          initial={{ opacity: 0, x: 50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, margin: "-10%" }}
-          transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: false, margin: "-10%" }}
+          transition={{ duration: 1, ease: [0.22, 1, 0.36, 1], delay: 0.2 }}
         >
-          <Link to="/projects" className="group flex items-center gap-4 text-sm font-mono tracking-widest uppercase text-text/70 hover:text-white transition-colors">
+          <Link to="/projects" className="group flex items-center justify-center gap-4 text-sm font-mono tracking-widest uppercase text-text/70 hover:text-white transition-colors">
             <span>View All Cases</span>
             <div className="w-12 h-[1px] bg-white/30 group-hover:bg-white group-hover:w-24 transition-all duration-500 ease-out" />
           </Link>

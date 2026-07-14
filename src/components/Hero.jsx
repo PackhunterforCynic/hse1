@@ -38,10 +38,10 @@ export default function Hero() {
   };
 
   return (
-    <section ref={containerRef} className="relative w-full md:h-screen overflow-hidden bg-black flex flex-col md:block pt-16 md:pt-0">
+    <section ref={containerRef} className="relative w-full min-h-[100dvh] md:h-screen overflow-hidden bg-black flex flex-col md:block pt-16 md:pt-0 pb-16 md:pb-0">
       {/* Video Background */}
       <div 
-        className="relative md:absolute md:inset-0 w-full aspect-video md:aspect-auto md:h-full"
+        className="relative md:absolute md:inset-0 w-full aspect-video md:aspect-auto md:h-full shrink-0"
         onMouseEnter={handleVideoHover}
         onMouseLeave={handleVideoLeave}
       >
@@ -65,7 +65,7 @@ export default function Hero() {
         variants={containerVariants}
         initial="hidden"
         animate={!loading ? "visible" : "hidden"}
-        className="relative z-10 flex flex-col items-center justify-center w-full h-full px-4 text-center py-12 md:py-0 pointer-events-none"
+        className="relative z-10 flex-1 flex flex-col items-center justify-center w-full px-4 text-center py-8 md:py-0 pointer-events-none"
       >
         
         {/* Title */}
