@@ -127,7 +127,7 @@ const EditorialStory = ({ images, openLightbox }) => {
 };
 
 
-export async function loader({ params, request }) {
+export async function clientLoader({ params, request }) {
   const projectMeta = allProjects.find(p => p.id === params.id);
   if (!projectMeta) {
     throw new Response("Not Found", { status: 404 });
@@ -151,11 +151,6 @@ export async function loader({ params, request }) {
   return { projectMeta, projectData: data };
 }
 
-export function headers() {
-  return {
-    "Cache-Control": "public, max-age=3600, s-maxage=3600, stale-while-revalidate=86400",
-  };
-}
 
 export default function PhotographyDetail() {
   const { id } = useParams();
