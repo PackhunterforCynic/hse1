@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "react-router dev",
-    "build": "react-router build",
+    "build": "react-router build && node scripts/postbuild.js",
     "lint": "oxlint",
     "preview": "react-router-serve build/server/index.js",
     "start": "react-router-serve build/server/index.js",
