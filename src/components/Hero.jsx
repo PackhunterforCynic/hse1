@@ -38,10 +38,10 @@ export default function Hero() {
   };
 
   return (
-    <section ref={containerRef} className="relative w-full h-screen overflow-hidden bg-black">
+    <section ref={containerRef} className="relative w-full md:h-screen overflow-hidden bg-black flex flex-col md:block pt-16 md:pt-0">
       {/* Video Background */}
       <div 
-        className="absolute inset-0 w-full h-full"
+        className="relative md:absolute md:inset-0 w-full aspect-video md:aspect-auto md:h-full"
         onMouseEnter={handleVideoHover}
         onMouseLeave={handleVideoLeave}
       >
@@ -56,7 +56,8 @@ export default function Hero() {
           transition={{ duration: 3, ease: 'easeOut' }}
           className="object-cover w-full h-full transform origin-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-bg/30 via-transparent to-bg" />
+        <div className="absolute inset-0 bg-gradient-to-b from-bg/30 via-transparent to-bg hidden md:block" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent md:hidden" />
       </div>
 
       {/* Content */}
@@ -64,7 +65,7 @@ export default function Hero() {
         variants={containerVariants}
         initial="hidden"
         animate={!loading ? "visible" : "hidden"}
-        className="relative z-10 flex flex-col items-center justify-center w-full h-full px-4 text-center pt-24 md:pt-0 pointer-events-none"
+        className="relative z-10 flex flex-col items-center justify-center w-full h-full px-4 text-center py-12 md:py-0 pointer-events-none"
       >
         
         {/* Title */}

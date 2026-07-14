@@ -50,7 +50,7 @@ export default function ProjectDetail() {
       </Helmet>
 
       {/* Hero */}
-      <section className="relative w-full h-[100dvh] overflow-hidden">
+      <section className="relative w-full aspect-video md:aspect-auto md:h-[100dvh] overflow-hidden mt-16 md:mt-0">
         <motion.div 
           className="absolute inset-0 w-full h-full origin-center"
           initial={{ scale: 1.15 }}
@@ -64,14 +64,14 @@ export default function ProjectDetail() {
               loop 
               muted={isMuted} 
               playsInline 
-              className="absolute inset-0 w-full h-full object-cover bg-black"
+              className="absolute inset-0 w-full h-full object-contain md:object-cover bg-black"
             />
           ) : (
             <img 
               src={projectData.heroImage || projectMeta.cover} 
               alt={projectMeta.title}
               fetchPriority="high"
-              className="absolute inset-0 w-full h-full object-cover bg-black"
+              className="absolute inset-0 w-full h-full object-contain md:object-cover bg-black"
             />
           )}
         </motion.div>

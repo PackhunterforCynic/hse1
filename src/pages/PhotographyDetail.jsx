@@ -186,7 +186,7 @@ export default function PhotographyDetail() {
       </Helmet>
 
       {/* Cinematic Hero */}
-      <section className="relative w-full h-[100dvh] overflow-hidden flex flex-col justify-end p-6 md:p-12 xl:p-24">
+      <section className="relative w-full aspect-[4/3] md:aspect-auto md:h-[100dvh] overflow-hidden flex flex-col justify-end p-6 md:p-12 xl:p-24 mt-16 md:mt-0">
         <motion.div 
           className="absolute inset-0 z-0 origin-bottom"
           initial={{ scale: 1.1, filter: "brightness(0.5) blur(10px)" }}
@@ -196,7 +196,7 @@ export default function PhotographyDetail() {
           <img 
             src={projectData.cover || projectMeta.cover} 
             alt={projectData.title || projectMeta.title}
-            className="w-full h-full object-cover"
+            className="w-full h-full object-contain md:object-cover bg-black"
           />
         </motion.div>
         
