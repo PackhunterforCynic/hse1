@@ -38,7 +38,7 @@ export default function Hero() {
   };
 
   return (
-    <section ref={containerRef} className="relative w-full min-h-[100dvh] md:h-screen overflow-hidden bg-black flex flex-col md:block pt-16 md:pt-0 pb-16 md:pb-0">
+    <section ref={containerRef} className="relative w-full min-h-[100dvh] md:h-screen overflow-hidden bg-black flex flex-col pt-16 md:pt-0 pb-16 md:pb-0">
       {/* Video Background */}
       <div 
         className="relative md:absolute md:inset-0 w-full aspect-video md:aspect-auto md:h-full shrink-0"
