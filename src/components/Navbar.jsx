@@ -4,6 +4,7 @@ import { useCursor } from '../context/CursorContext';
 import { motion, useScroll, useMotionValueEvent, AnimatePresence } from 'framer-motion';
 import { Search } from 'lucide-react';
 import AISearch from './AISearch';
+import NavbarLogo from './common/NavbarLogo';
 
 export default function Navbar() {
   const { updateCursor, resetCursor } = useCursor();
@@ -57,15 +58,7 @@ export default function Navbar() {
             onMouseLeave={handleMouseLeave}
             onClick={() => setMenuOpen(false)}
           >
-            <motion.span
-              animate={{ 
-                opacity: [0.7, 1, 0.7], 
-                textShadow: ["0px 0px 4px rgba(255,255,255,0)", "0px 0px 12px rgba(239,230,210,0.6)", "0px 0px 4px rgba(255,255,255,0)"] 
-              }}
-              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-            >
-              Havilah
-            </motion.span>
+            <NavbarLogo />
           </Link>
           
           {/* Desktop Nav */}

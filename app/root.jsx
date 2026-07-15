@@ -54,16 +54,20 @@ function LenisSetup({ pathname }) {
     lenis.on('scroll', ScrollTrigger.update);
 
     // Run Lenis strictly on GSAP's ticker for ultra-smooth 60fps
-    gsap.ticker.add((time) => {
+    const updateLenis = (time) => {
       lenis.raf(time * 1000);
-    });
+    };
+    gsap.ticker.add(updateLenis);
+    
     // Disable GSAP lag smoothing to prevent jank when frames drop
     gsap.ticker.lagSmoothing(0);
+    // Explicitly target 120fps for high refresh rate monitors
+    gsap.ticker.fps(120);
     
     return () => {
       resizeObserver.disconnect();
       clearTimeout(resizeTimer);
-      gsap.ticker.remove(lenis.raf);
+      gsap.ticker.remove(updateLenis);
       lenis.destroy();
     };
   }, []);

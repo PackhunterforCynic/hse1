@@ -65,9 +65,9 @@ export default function FeaturedProjects() {
               <motion.div 
                 key={project.id}
                 className={`flex flex-col ${isEven ? 'md:flex-row' : 'md:flex-row-reverse'} gap-6 md:gap-16 items-center sticky md:relative bg-bg pb-8 md:pb-0 border-t border-white/5 md:border-none pt-4 md:pt-0 rounded-t-2xl md:rounded-none`}
-                initial={{ opacity: 0, y: 100 }}
+                initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-20%" }}
+                viewport={{ once: true, margin: "0px" }}
                 transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
                 style={{
                   top: isMobile ? `calc(5rem + ${index * 0.5}rem)` : 'auto',
@@ -113,7 +113,7 @@ export default function FeaturedProjects() {
                     to={`/projects/${project.id}`}
                     className="relative inline-flex items-center gap-4 text-xs font-mono tracking-widest uppercase group/btn overflow-hidden"
                   >
-                    <span className="relative z-10 transition-colors group-hover/btn:text-bg mix-blend-difference">Explore Project</span>
+                    <span className="relative z-10 transition-colors group-hover/btn:text-bg">Explore Project</span>
                     <div className="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center relative z-10 group-hover/btn:border-transparent transition-colors">
                       <div className="w-1 h-1 bg-white rounded-full group-hover/btn:scale-0 transition-transform" />
                     </div>
