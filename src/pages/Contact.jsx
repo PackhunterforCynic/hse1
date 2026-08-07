@@ -392,11 +392,10 @@ export default function Contact() {
                     onMouseEnter={() => updateCursor({ active: true })}
                     onMouseLeave={resetCursor}
                   >
-                    <option value="Film Production" className="bg-[#0C1220] text-[#F8F5F0] py-2">Film Production</option>
-                    
-                    <option value="Social Media Marketing" className="bg-[#0C1220] text-[#F8F5F0] py-2">Social Media Marketing</option>
-                    <option value="Event Videography" className="bg-[#0C1220] text-[#F8F5F0] py-2">Event Videography</option>
                     <option value="Photography" className="bg-[#0C1220] text-[#F8F5F0] py-2">Photography</option>
+                    <option value="Film Production" className="bg-[#0C1220] text-[#F8F5F0] py-2">Film Production</option>                    
+                    <option value="Social Media Marketing" className="bg-[#0C1220] text-[#F8F5F0] py-2">Social Media Marketing</option>
+                    <option value="Event Videography" className="bg-[#0C1220] text-[#F8F5F0] py-2">Event Videography</option>                   
                     <option value="Live Broadcast" className="bg-[#0C1220] text-[#F8F5F0] py-2">Live Broadcast</option>
                     <option value=" Web Design and Development" className="bg-[#0C1220] text-[#F8F5F0] py-2"> Web Design and Development</option>                
                     <option value="Other" className="bg-[#0C1220] text-[#F8F5F0] py-2">Other</option>
