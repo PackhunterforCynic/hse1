@@ -1,0 +1,21 @@
+{
+  "id": "popnosh",
+  "title": "Popnosh",
+  "category": "Cafés and Hospitality",
+  "year": "2026",
+  "story": "A feel good café and hospitality showcase.",
+  "deliverables": [
+    "Commercial Photography",
+    "Promotional Video"
+  ],
+  "heroVideo": "/videos/popnosh/popnosh.mp4",
+  "heroImage": "/images/popnosh/image.png",
+  "credits": {
+    "director": "Praise",
+    "cinematographer": "Praise",
+    "client": "Popnosh"
+  },
+  "media": [
+     { "type": "video", "src": "/videos/popnosh/popnosh.mp4", "poster": "/images/popnosh/image.png" }
+  ]
+}

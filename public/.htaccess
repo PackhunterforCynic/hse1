@@ -1,0 +1,39 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Security Shield: Block direct URL viewing of confidential studio repositories & lead vaults
+  RewriteRule ^(chats-history|contact-leads|internships-archive|chat|strategy)\.(json|txt)$ /403-forbidden [F,L]
+
+  # Route backend APIs to native PHP handlers on Hostinger shared servers
+  RewriteRule ^api/contact/?$ /api/contact.php [L,QSA]
+  RewriteRule ^api/internship/?$ /api/internship.php [L,QSA]
+  RewriteRule ^api/chat/?$ /api/chat.php [L,QSA]
+
+  # Direct file or directory existence check
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # React SPA client-side routing fallback to index.html
+  RewriteRule ^ index.html [L]
+</IfModule>
+
+<IfModule mod_headers.c>
+  # Disable cache for HTML and service worker so deployment updates show immediately
+  <FilesMatch "\.(html|htm)$|^sw\.js$">
+    Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires "0"
+  </FilesMatch>
+
+  # Long term immutable caching for bundled Vite assets, fonts, images, and videos
+  <FilesMatch "\.(js|css|woff|woff2|ttf|png|jpg|jpeg|gif|ico|svg|webp|avif|mp4|webm)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+
+  # Short term stale-while-revalidate caching for dynamic gallery content
+  <FilesMatch "gallery\.json$">
+    Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
+  </FilesMatch>
+</IfModule>

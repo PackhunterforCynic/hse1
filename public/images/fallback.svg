@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title>Havilah Placeholder</title>
+  <desc>Premium cinematic fallback image for Havilah Multimedia Production.</desc>
+
+  <defs>
+    <!-- Background -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060606"></stop>
+      <stop offset="55%" stop-color="#101010"></stop>
+      <stop offset="100%" stop-color="#050505"></stop>
+    </linearGradient>
+
+    <!-- Gold Accent -->
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F3D27A"></stop>
+      <stop offset="50%" stop-color="#D9B75E"></stop>
+      <stop offset="100%" stop-color="#8C6B28"></stop>
+    </linearGradient>
+
+    <!-- Spotlight -->
+    <radialGradient id="light" cx="50%" cy="38%" r="65%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity=".09"></stop>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"></stop>
+    </radialGradient>
+
+    <!-- Gold Glow -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="12" result="blur"></feGaussianBlur>
+      <feMerge>
+        <feMergeNode in="blur"></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+
+    <!-- Film Grain -->
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.75" numOctaves="2" stitchTiles="stitch"></feTurbulence>
+      <feColorMatrix type="saturate" values="0"></feColorMatrix>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0.03"></feFuncA>
+      </feComponentTransfer>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="900" fill="url(#bg)"></rect>
+
+  <!-- Soft Light -->
+  <rect width="1600" height="900" fill="url(#light)"></rect>
+
+  <!-- Grain -->
+  <rect width="1600" height="900" filter="url(#grain)" opacity=".8"></rect>
+
+  <!-- Border -->
+  <rect x="28" y="28" width="1544" height="844" rx="12" fill="none" stroke="url(#gold)" stroke-width="2" opacity=".45"></rect>
+
+  <!-- Aperture -->
+  <g opacity=".18">
+    <circle cx="800" cy="450" r="130" fill="none" stroke="url(#gold)" stroke-width="2"></circle>
+    <circle cx="800" cy="450" r="180" fill="none" stroke="url(#gold)" stroke-width="1"></circle>
+  </g>
+
+  <!-- Logo -->
+  <g filter="url(#glow)">
+    <text x="800" y="430" text-anchor="middle" fill="url(#gold)" font-size="88" font-family="'Cormorant Garamond', Georgia, serif" letter-spacing="10">
+      HAVILAH
+    </text>
+  </g>
+
+  <text x="800" y="490" text-anchor="middle" fill="#C9C9C9" font-size="22" font-family="'Inter', Arial, sans-serif" letter-spacing="6" opacity=".82">
+    CINEMATIC STORYTELLING
+  </text>
+
+  <!-- Bottom Divider -->
+  <line x1="650" y1="540" x2="950" y2="540" stroke="url(#gold)" stroke-width="1.5" opacity=".5"></line>
+</svg>

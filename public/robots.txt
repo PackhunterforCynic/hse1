@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Sitemap: https://havilahpro.com/sitemap.xml
+
+# Crawl optimization for high-priority sections
+Allow: /services
+Allow: /projects
+Allow: /about
+Allow: /contact
+Allow: /internship

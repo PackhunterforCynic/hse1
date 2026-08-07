@@ -1,0 +1,1761 @@
+{
+  "projects": [
+    {
+      "id": "indo-korean",
+      "title": "Indo Korean",
+      "category": "Corporate",
+      "year": "2026",
+      "story": "Exploring the rich cultural intersections between India and Korea, this documentary weaves together personal narratives, culinary traditions, and visual artistry into a seamless, cinematic journey.",
+      "deliverables": [
+        "Documentary Film",
+        "Photography",
+        "Brand Strategy"
+      ],
+      "heroVideo": "/videos/indo korean.mp4",
+      "heroImage": "/images/indo korean/013.webp",
+      "gallery": [
+        {
+          "type": "image",
+          "url": "/images/indo korean/001.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/indo korean/002.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/indo korean/003.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/indo korean/004.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/indo korean/005.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/indo korean/006.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/indo korean/007.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/indo korean/008.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/indo korean/009.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/indo korean/010.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/indo korean/011.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/indo korean/012.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/indo korean/013.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/indo korean/014.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/indo korean/015.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/indo korean/016.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/indo korean/017.webp",
+          "orientation": "landscape"
+        }
+      ],
+      "btsImage": "/images/praise.png",
+      "credits": {
+        "director": "Praise",
+        "cinematographer": "Praise",
+        "client": "Cultural Exchange Board"
+      }
+    },
+    {
+      "id": "real-estate",
+      "title": "Real Estate",
+      "category": "Commercial",
+      "year": "2026",
+      "story": "A premium showcase of modern architectural marvels. We focused on capturing the scale, light, and luxury of these properties using sweeping drone shots and intimate interior details.",
+      "deliverables": [
+        "Commercial Film",
+        "Aerial Photography",
+        "Social Media Reels"
+      ],
+      "heroVideo": "/videos/Real Estate Video 720P.mp4",
+      "heroImage": "https://picsum.photos/seed/rehero/2000/1000",
+      "gallery": [
+        {
+          "type": "video",
+          "url": "https://storage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "https://picsum.photos/seed/re1/1000/1200",
+          "orientation": "portrait"
+        },
+        {
+          "type": "video",
+          "url": "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+          "orientation": "portrait"
+        },
+        {
+          "type": "image",
+          "url": "https://picsum.photos/seed/re3/1200/800",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "https://picsum.photos/seed/re5/1200/800",
+          "orientation": "landscape"
+        }
+      ],
+      "btsImage": "/images/praise.png",
+      "credits": {
+        "director": "Praise",
+        "cinematographer": "Praise",
+        "client": "Luxury Estates LLC"
+      }
+    },
+    {
+      "id": "young-indians",
+      "title": "Young Indians",
+      "category": "Documentary",
+      "year": "2026",
+      "story": "A gritty, authentic look into the lives of the next generation. We followed subjects across the country to capture their drive, their challenges, and their unbroken spirit.",
+      "deliverables": [
+        "Documentary Series",
+        "Portrait Photography",
+        "Campaign Strategy"
+      ],
+      "heroImage": "https://picsum.photos/seed/yihero/2000/1000",
+      "heroVideo": "/videos/IYD.mp4",
+      "gallery": [
+        {
+          "type": "image",
+          "url": "/images/young-indians/001.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/young-indians/002.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/young-indians/003.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/young-indians/004.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/young-indians/005.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/young-indians/006.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/young-indians/007.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/young-indians/008.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/young-indians/009.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/young-indians/010.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/young-indians/011.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/young-indians/012.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/young-indians/013.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/young-indians/014.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/young-indians/015.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/young-indians/016.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/young-indians/017.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/young-indians/018.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/young-indians/019.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/young-indians/020.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/young-indians/021.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/young-indians/022.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/young-indians/023.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/young-indians/024.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/young-indians/025.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/young-indians/026.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/young-indians/027.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/young-indians/028.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/young-indians/029.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/young-indians/030.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/young-indians/031.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/young-indians/032.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/young-indians/033.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/young-indians/034.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/young-indians/035.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/young-indians/036.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/young-indians/037.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/young-indians/038.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/young-indians/039.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/young-indians/040.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/young-indians/041.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/young-indians/042.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/young-indians/043.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/young-indians/044.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/young-indians/045.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/young-indians/046.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/young-indians/047.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/young-indians/048.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/young-indians/049.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/young-indians/050.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/young-indians/051.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/young-indians/052.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/young-indians/053.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/young-indians/054.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/young-indians/055.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/young-indians/056.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/young-indians/057.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/young-indians/058.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/young-indians/059.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/young-indians/060.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/young-indians/061.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/young-indians/062.webp",
+          "orientation": "landscape"
+        }
+      ],
+      "btsImage": "/images/praise.png",
+      "credits": {
+        "director": "Praise",
+        "cinematographer": "Praise",
+        "client": "YI Foundation"
+      }
+    },
+    {
+      "id": "naveen-sharlien",
+      "title": "Naveen Sharlien Wedding",
+      "category": "Wedding",
+      "year": "2026",
+      "story": "A beautiful celebration of love. We captured the intimate moments, the grand celebrations, and the raw emotions of Naveen and Sharlien’s special day, creating a cinematic wedding film that they will cherish forever.",
+      "deliverables": [
+        "Wedding Film",
+        "Candid Photography",
+        "Teaser Reel"
+      ],
+      "heroImage": "/images/naveen sharlien/001.png",
+      "heroVideo": "/videos/NAVEEN SHARLIEN PHOTOSLIDESHOW.mp4",
+      "gallery": [
+        {
+          "type": "video",
+          "url": "/videos/SHARLIEN NAVEEN HALDI.mp4",
+          "orientation": "portrait"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/001.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/002.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/003.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/004.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/005.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/006.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/007.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/008.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/009.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/010.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/011.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/012.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/013.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/014.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/015.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/016.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/017.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/018.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/019.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/020.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/021.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/022.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/023.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/024.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/025.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/026.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/027.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/028.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/029.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/030.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/031.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/032.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/033.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/034.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/035.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/036.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/037.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/038.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/039.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/040.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/041.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/042.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/043.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/044.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/045.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/046.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/047.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/048.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/049.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/050.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/051.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/052.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/053.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/054.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/055.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/056.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/057.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/058.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/059.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/060.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/061.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/062.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/063.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/064.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/065.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/066.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/067.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/068.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/069.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/070.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/071.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/072.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/073.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/074.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/075.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/076.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/077.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/078.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/079.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/080.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/081.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/082.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/083.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/084.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/085.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Haldi_Ceremony/086.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "video",
+          "url": "/videos/NAVEEN SHARLIEN PHOTOSLIDESHOW.mp4",
+          "orientation": "portrait"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/001.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/002.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/003.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/004.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/005.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/006.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/007.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/008.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/009.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/010.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/011.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/012.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/013.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/014.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/015.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/016.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/017.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/018.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/019.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/020.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/021.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/022.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/023.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/024.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/025.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/026.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/027.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/028.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/029.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/030.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/031.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/032.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/033.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/034.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/035.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/036.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/037.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/038.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/039.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/040.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/041.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/042.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/043.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/044.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/045.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/046.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/047.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/048.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/049.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/050.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/051.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/052.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/053.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/054.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/055.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/056.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/057.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/058.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/059.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/060.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/061.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/062.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/063.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/064.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/065.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/066.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/067.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/068.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/069.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/070.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/071.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/072.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/073.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/074.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/075.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/naveen sharlien/Church/076.jpg",
+          "orientation": "landscape"
+        },
+        {
+          "type": "video",
+          "url": "/videos/BIKE VINTAGE.mp4",
+          "orientation": "landscape"
+        }
+      ],
+      "btsImage": "/images/praise.png",
+      "credits": {
+        "director": "Praise",
+        "cinematographer": "Praise",
+        "client": "Naveen & Sharlien"
+      }
+    },
+    {
+      "id": "srusti-pratik-haldi",
+      "title": "Srusti Pratik Haldi",
+      "category": "Wedding",
+      "year": "2026",
+      "story": "A vibrant explosion of color, tradition, and pure joy. We documented the beautiful Haldi ceremony of Srusti and Pratik, focusing on the intimate rituals and the beautiful chaos of family celebrations.",
+      "deliverables": [
+        "Event Highlights",
+        "Candid Photography",
+        "Reels"
+      ],
+      "heroImage": "/images/srusti pratik/003.webp",
+      "heroVideo": "",
+      "gallery": [
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/001.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/002.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/003.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/004.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/005.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/006.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/007.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/008.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/009(1).webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/009.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/010.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/011.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/013.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/014.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/015.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/016.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/017.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/018.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/019.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/020.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/021.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/022.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/023.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/024.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/025.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/026.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/027.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/028.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/029.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/030.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/031.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/032.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/033.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/034.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/035.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/036.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/037.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/038.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/039.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/040.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/041.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/042.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/043.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/044.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/045.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/046.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/047.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/048.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/049.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/050.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/051.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/052.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/053.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/054.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/055.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/056.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/057.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/058.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/059.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/060.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/061.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/062.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/063.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/064.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/065.webp",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/srusti pratik/066.webp",
+          "orientation": "landscape"
+        }
+      ],
+      "btsImage": "/images/praise.png",
+      "credits": {
+        "director": "Praise",
+        "cinematographer": "Praise",
+        "client": "Srusti & Pratik"
+      }
+    },
+    {
+      "id": "medtourin",
+      "title": "Medtourin",
+      "category": "Medical",
+      "year": "2026",
+      "story": "A compelling showcase of medical innovation and healthcare excellence.",
+      "deliverables": [
+        "Documentary Film",
+        "Photography",
+        "Brand Strategy"
+      ],
+      "heroImage": "https://images.unsplash.com/photo-1516549655169-df83a0774514?q=80&w=2000&auto=format&fit=crop",
+      "heroVideo": "/videos/medtourin/004.mp4",
+      "gallery": [
+        {
+          "type": "video",
+          "url": "/videos/medtourin/001.mp4",
+          "orientation": "landscape"
+        },
+        {
+          "type": "video",
+          "url": "/videos/medtourin/002.mp4",
+          "orientation": "landscape"
+        },
+        {
+          "type": "video",
+          "url": "/videos/medtourin/003.mp4",
+          "orientation": "landscape"
+        },
+        {
+          "type": "video",
+          "url": "/videos/medtourin/004.mp4",
+          "orientation": "landscape"
+        }
+      ],
+      "btsImage": "/images/praise.png",
+      "credits": {
+        "director": "Praise",
+        "cinematographer": "Praise",
+        "client": "Medtourin"
+      }
+    },
+    {
+      "id": "popnosh",
+      "title": "Popnosh",
+      "category": "Cafés and Hospitality",
+      "year": "2026",
+      "story": "A feel good café and hospitality showcase.",
+      "deliverables": [
+        "Commercial Photography",
+        "Promotional Video"
+      ],
+      "heroVideo": "https://www.youtube.com/watch?v=0Qv5bQjaAYY",
+      "gallery": [
+        {
+          "type": "image",
+          "url": "/images/medtourin/image.avif",
+          "orientation": "landscape"
+        },
+        {
+          "type": "image",
+          "url": "/images/medtourin/image.avif",
+          "orientation": "portrait"
+        }
+      ],
+      "btsImage": "/images/praise.png",
+      "credits": {
+        "director": "Praise",
+        "cinematographer": "Praise",
+        "client": "Popnosh"
+      }
+    }
+  ]
+}

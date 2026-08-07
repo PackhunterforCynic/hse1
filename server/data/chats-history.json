@@ -1,0 +1,69 @@
+{
+  "updatedAt": "2026-08-07T05:13:45.687Z",
+  "totalSessions": 1,
+  "totalMessages": 9,
+  "sessions": [
+    {
+      "id": "sess_1786079496505_zan3x",
+      "userName": "Robin",
+      "pageContext": "/contact",
+      "startTime": "2026-08-07T05:13:30.977Z",
+      "lastUpdated": "2026-08-07T05:13:45.687Z",
+      "messageCount": 9,
+      "topics": [
+        "Photography",
+        "Weddings",
+        "Web Development",
+        "Growth & Strategy",
+        "Cinematography"
+      ],
+      "messages": [
+        {
+          "role": "assistant",
+          "content": "Good evening, Robin. I have archived our previous dialog so we may start afresh.\n\nHow would you like to direct our creative focus today?",
+          "timestamp": "2026-08-07T05:13:45.687Z"
+        },
+        {
+          "role": "user",
+          "content": "Tell me about your wedding projects",
+          "timestamp": "2026-08-07T05:13:45.687Z"
+        },
+        {
+          "role": "assistant",
+          "content": "**Connection Error:** network error",
+          "timestamp": "2026-08-07T05:13:45.687Z"
+        },
+        {
+          "role": "user",
+          "content": "hi",
+          "timestamp": "2026-08-07T05:13:45.687Z"
+        },
+        {
+          "role": "assistant",
+          "content": "**Connection Error:** ⚠️ Gemini AI Quota Exceeded: Your Google Generative AI API key has temporarily reached its rate limit or daily quota. Please pause a moment before retrying, or check your API key usage plan at https://aistudio.google.com/.",
+          "timestamp": "2026-08-07T05:13:45.687Z"
+        },
+        {
+          "role": "user",
+          "content": "hi",
+          "timestamp": "2026-08-07T05:13:45.687Z"
+        },
+        {
+          "role": "assistant",
+          "content": "Greetings, Robin. Welcome to Havilah Studio. \n\nAs you prepare to get in touch with us, I am here to assist you with any initial inquiries regarding our visual storytelling, brand direction, or project availability. \n\nHow may I assist you with your vision today?",
+          "timestamp": "2026-08-07T05:13:45.687Z"
+        },
+        {
+          "role": "user",
+          "content": "iso of sony m3",
+          "timestamp": "2026-08-07T05:13:45.687Z"
+        },
+        {
+          "role": "assistant",
+          "content": "Robin, if you are referring to the **Sony Alpha 7 III (A7M3)**—a staple camera body in visual production—here are its core ISO parameters:\n\n* **Native ISO Range:** 100 – 51,200 (Stills & Video)\n* **Expanded ISO Range:** 50 – 204,800 (Stills)\n* **S-Log Picture Profiles:** Base ISO begins at **ISO 800** (maximizing dynamic range for S-Log2 / S-Log3 footage).\n\nFrom a cinematography perspective, keeping the ISO at its base levels (ISO 100 for standard profiles or ISO 800 for Log) delivers optimal dynamic range and minimal signal noise.\n\nAre you evaluating production equipment for an upcoming shoot, or can I assist you with the visual technicalities of a project you",
+          "timestamp": "2026-08-07T05:13:45.687Z"
+        }
+      ]
+    }
+  ]
+}

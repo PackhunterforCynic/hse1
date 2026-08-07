@@ -1,0 +1,22 @@
+{
+  "title": "Medtourin",
+  "story": "A compelling showcase of medical innovation and healthcare excellence.",
+  "deliverables": [
+    "Documentary Film",
+    "Photography",
+    "Brand Strategy"
+  ],
+  "heroImage": "/images/medtourin/image.avif",
+  "heroVideo": "/videos/medtourin/004.mp4",
+  "credits": {
+    "director": "Praise",
+    "cinematographer": "Praise",
+    "client": "Medtourin"
+  },
+  "media": [
+    { "type": "video", "src": "/videos/medtourin/001.mp4", "poster": "/images/medtourin/image.avif" },
+    { "type": "video", "src": "/videos/medtourin/002.mp4", "poster": "/images/medtourin/image.avif" },
+    { "type": "video", "src": "/videos/medtourin/003.mp4", "poster": "/images/medtourin/image.avif" },
+    { "type": "video", "src": "/videos/medtourin/004.mp4", "poster": "/images/medtourin/image.avif" }
+  ]
+}
