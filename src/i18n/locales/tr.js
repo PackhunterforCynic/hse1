@@ -43,6 +43,7 @@ export default {
     photography: "Profesyonel Fotoğrafçılık",
     videoEditing: "Kurgu ve Renk Düzenleme",
     socialMedia: "Sosyal Medya Pazarlaması",
+    digitalMarketing: "Dijital Pazarlama",
     creativeCampaigns: "Yaratıcı Reklam Kampanyaları",
     commercials: "Ticari ve Tanıtım Filmleri",
     aerial: "Havadan Sinematografi ve Drone",

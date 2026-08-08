@@ -150,7 +150,7 @@ const Navbar = memo(function Navbar() {
                   <Link
                     to={item.path}
                     prefetch="intent"
-                    className="text-5xl md:text-6xl font-display uppercase tracking-tighter md:hover:text-accent transition-colors duration-300 block"
+                    className="text-3xl md:text-4xl font-display uppercase tracking-[0.05em] md:hover:text-accent transition-colors duration-300 block"
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}
                   >

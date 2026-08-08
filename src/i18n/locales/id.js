@@ -43,13 +43,14 @@ export default {
     photography: "Fotografi Editorial Kelas Atas",
     videoEditing: "Penyuntingan & Penataan Warna Video",
     socialMedia: "Pemasaran & Manajemen Media Sosial",
+    digitalMarketing: "Pemasaran Digital",
     creativeCampaigns: "Kampanye Kreatif Berpengaruh",
     commercials: "Iklan Televisi & Komersial",
     aerial: "Sinematografi Udara & Drone Pro",
     soundDesign: "Desain Suara & Penataan Musik Asli"
   },
   projectsPage: {
-    ourWork: "Karya Unggulan Kami",
+    ourWork: "Karya-Karya Unggulan Kami",
     curatedDesc: "Koleksi kurator dari seni penceritaan sinematik terbaik dan pengalaman penjenamaan spektakuler produksi kami."
   },
   aboutPage: {

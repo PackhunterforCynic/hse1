@@ -43,6 +43,7 @@ export default {
     photography: "Nhiếp Ảnh Thượng Lưu",
     videoEditing: "Dựng Phim Và Hậu Kỳ Sang Trọng",
     socialMedia: "Tiếp Thị Mạng Xã Hội Đột Phá",
+    digitalMarketing: "Tiếp Thị Kỹ Thuật Số",
     creativeCampaigns: "Chiến Dịch Truyền Thông Độc Đáo",
     commercials: "Sản Xuất Phim Quảng Cáo TVC",
     aerial: "Quay Phim Không Ảnh Trường Cao",

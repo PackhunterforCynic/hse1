@@ -43,6 +43,7 @@ export default {
     photography: "High-End Komerční Fotografie",
     videoEditing: "Špičkový Střih & Barvicí Grading",
     socialMedia: "Social Media Dominance & Marketing",
+    digitalMarketing: "Digitální Marketing",
     creativeCampaigns: "Kreativní Reklamní Kampaně",
     commercials: "Komerční TVC & Reklamní Filmy",
     aerial: "Letecká Sinematografie & Drony",

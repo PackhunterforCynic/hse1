@@ -94,8 +94,8 @@ export default function ProjectDetail() {
             />
           )}
         </motion.div>
-        <div className="absolute inset-0 bg-black/40" />
-        <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none px-4 text-center">
+        <div className="absolute inset-0 bg-transparent md:bg-black/40 pointer-events-none" />
+        <div className="hidden md:flex absolute inset-0 flex-col items-center justify-center pointer-events-none px-4 text-center">
           <h1 className="text-6xl md:text-[8vw] font-display uppercase tracking-tighter text-white/80 opacity-70 mb-2 md:mb-4 flex flex-wrap justify-center gap-x-[2vw]">
             {projectMeta.title.split(' ').map((word, i) => (
               <span key={i} className="overflow-hidden inline-block pb-4 md:pb-8 -mb-4 md:-mb-8">
@@ -131,8 +131,12 @@ export default function ProjectDetail() {
       </section>
 
       {/* Project Overview */}
-      <section className="py-24 px-4 md:px-12 max-w-7xl mx-auto w-full flex flex-col xl:flex-row gap-12">
+      <section className="py-12 md:py-24 px-4 md:px-12 max-w-7xl mx-auto w-full flex flex-col xl:flex-row gap-8 md:gap-12 mt-4 md:mt-0">
         <div className="w-full xl:w-2/3">
+          <div className="md:hidden mb-10 pb-10 border-b border-white/10">
+            <h1 className="text-4xl sm:text-5xl font-display uppercase tracking-tighter text-white mb-3 leading-tight">{projectMeta.title}</h1>
+            <p className="text-accent font-mono uppercase text-xs tracking-[0.2em]">{projectMeta.category}</p>
+          </div>
           <h2 className="text-sm font-mono tracking-widest text-accent uppercase mb-4">Project Overview</h2>
           <p className="text-2xl md:text-4xl font-light font-serif italic text-white/90 leading-relaxed">
             {projectData.story}

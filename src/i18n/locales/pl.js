@@ -43,6 +43,7 @@ export default {
     photography: "Fotografia High-End & Editorial",
     videoEditing: "Zaawansowany Montaż & Kolor-Korekcja",
     socialMedia: "Marketing Wpływów w Mediach Społecznościowych",
+    digitalMarketing: "Marketing Cyfrowy",
     creativeCampaigns: "Kreatywne Kampanie Reklamowe",
     commercials: "Filmy Komercyjne & Reklamy TV",
     aerial: "Kinematografia Lotnicza i Dronowa",

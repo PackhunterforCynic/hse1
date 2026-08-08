@@ -43,6 +43,7 @@ export default {
     photography: "Fotografie Comercială și Editorială",
     videoEditing: "Montaj Superior și Color Grading Pro",
     socialMedia: "Dominare și Marketing pe Social Media",
+    digitalMarketing: "Marketing Digital",
     creativeCampaigns: "Campanii Publicitare Originale",
     commercials: "Spoturi Publicitare și Reclamă TVC",
     aerial: "Cinematografie Aeriană & Filmări Drone Pro",

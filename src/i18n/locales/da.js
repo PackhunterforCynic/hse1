@@ -43,6 +43,7 @@ export default {
     photography: "Eksklusive Redaktionelle Fotostillinger",
     videoEditing: "High-End Klippekunst & Farvegradiering",
     socialMedia: "Sociale Medier Vækst- og Indflydelse",
+    digitalMarketing: "Digital Markedsføring",
     creativeCampaigns: "Banebrydende Reklamekoncepte",
     commercials: "Kommercielle TVC & Spotfilm",
     aerial: "Luftfotografering & Avanceret Dronefilm",

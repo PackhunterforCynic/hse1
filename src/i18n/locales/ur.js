@@ -43,6 +43,7 @@ export default {
     photography: "پروفیشنل فوٹوگرافی",
     videoEditing: "ہائی اینڈ ویڈیو ایڈیٹنگ اور کلر گریڈنگ",
     socialMedia: "سوشل میڈیا مارکیٹنگ اور وائرل حکمت عملی",
+    digitalMarketing: "ڈیجیٹل مارکیٹنگ",
     creativeCampaigns: "تخلیقی تشہیری مہمات",
     commercials: "کمرشل اور اشتہاری فلمیں",
     aerial: "فضائی اور ڈرون سنیماٹوگرافی",

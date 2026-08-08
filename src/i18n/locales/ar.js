@@ -43,6 +43,7 @@ export default {
     photography: "التصوير الفوتوغرافي",
     videoEditing: "المونتاج السينمائي",
     socialMedia: "التسويق عبر وسائل التواصل الاجتماعي",
+    digitalMarketing: "التسويق الرقمي",
     creativeCampaigns: "الحملات الإبداعية",
     commercials: "الإعلانات التجارية",
     aerial: "التصوير السينمائي الجوي",

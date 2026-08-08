@@ -43,6 +43,7 @@ export default {
     photography: "极意品格高端凝驻抓光画相",
     videoEditing: "鬼斧精炼裁构妙演影画调光工程",
     socialMedia: "社交阵地破冰狂掀澎湃传播矩阵",
+    digitalMarketing: "数字营销",
     creativeCampaigns: "惊破顽疾突阵引爆轰烈广告盛朝",
     commercials: "重磅商界品牌锋刃金质商业精拍",
     aerial: "俯仰寰宇苍穹鹰眼直升悬飞巨影",

@@ -43,6 +43,7 @@ export default {
     photography: "Професійна Editorial-Фотографія",
     videoEditing: "Елітний Монтаж та Кольорокорекція",
     socialMedia: "SMM та Органічна Домінація у Мережах",
+    digitalMarketing: "Цифровий Маркетинг",
     creativeCampaigns: "Креативні Віральні Кампанії",
     commercials: "Рекламні Ролики, Телебачення та Споти",
     aerial: "Аерофотозйомка та Дрон-Синтез",

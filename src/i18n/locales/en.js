@@ -43,13 +43,14 @@ export default {
     photography: "Photography",
     videoEditing: "Video Editing",
     socialMedia: "Social Media Marketing",
+    digitalMarketing: "Digital Marketing",
     creativeCampaigns: "Creative Campaigns",
     commercials: "Commercials",
     aerial: "Aerial Cinematography",
     soundDesign: "Sound Design"
   },
   projectsPage: {
-    ourWork: "Our Work",
+    ourWork: "Our Works",
     curatedDesc: "A curated selection of our finest cinematic storytelling and brand experiences."
   },
   aboutPage: {

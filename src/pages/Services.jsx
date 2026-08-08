@@ -5,7 +5,6 @@ import { motion } from 'framer-motion';
 import { useCursor } from '../context/CursorContext';
 import { useLanguage } from '../i18n';
 import GsapButton from '../components/common/GsapButton';
-import GsapScrollReveal from '../components/common/GsapScrollReveal';
 import { GradientShimmer } from '@/components/ui/gradient-shimmer';
 
 export default function Services() {
@@ -16,33 +15,18 @@ export default function Services() {
   const servicesData = [
     {
       title: t('servicesList.filmProduction') || "Film Production",
-      desc: "Narrative and documentary filmmaking with an uncompromising cinematic vision. We build films that leave a lasting imprint on culture.",
-      image: "/images/services/service1.png"
-    },
-    {
-      title: t('servicesList.commercials') || "Commercials",
-      desc: "High-end brand campaigns designed to captivate audiences, elevate identity, and define the premium tier of your market.",
-      image: "/images/services/service2.png"
-    },
-    {
-      title: t('servicesList.aerial') || "Aerial Cinematography",
-      desc: "Sweeping drone visuals and complex rigging that provide a breathtaking, impossible perspective on scale and space.",
-      image: "/images/services/service3.png" 
-    },
-    {
-      title: t('servicesList.videoEditing') || "Video Editing",
-      desc: "Meticulous post-production, pacing, and color science that crafts the final emotional resonance of the story.",
-      image: "/images/services/service4.jpeg"
+      desc: "Comprehensive cinematic storytelling across three core categories: Ad films for brand campaigns, narrative Short films, and impactful Documentary films.",
+      image: "https://images.unsplash.com/photo-1485846234645-a62644f84728?q=80&w=1200&auto=format&fit=crop"
     },
     {
       title: t('servicesList.photography') || "Photography",
-      desc: "Editorial and brand photography with a sharp, distinctive visual language built for print, deck, and digital.",
-      image: "/images/services/image.png"
+      desc: "Editorial and brand photography with a sharp, distinctive visual language built for print, deck, and digital spaces.",
+      image: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=1200&auto=format&fit=crop"
     },
     {
-      title: t('servicesList.soundDesign') || "Sound Design",
-      desc: "Immersive audio mixing, Foley, and original orchestral scoring that gives a powerful heartbeat to the visuals.",
-      image: "/images/services/service1.png"
+      title: t('servicesList.digitalMarketing') || "Digital Marketing",
+      desc: "End-to-end digital growth solutions including robust Web Development, strategic Brand Development, and targeted Social Media Marketing.",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2000&auto=format&fit=crop"
     }
   ];
 
@@ -66,21 +50,18 @@ export default function Services() {
 
       <div className="max-w-[1920px] mx-auto px-6 md:px-12 xl:px-24 relative z-10">
         <div className="mb-32 md:mb-48 max-w-5xl">
-          <GsapScrollReveal mode="text" className="text-6xl md:text-8xl lg:text-[10rem] font-serif text-[#F8F5F0] tracking-tighter mb-8 leading-[0.9] block">
+          <h2 className="text-6xl md:text-8xl lg:text-[10rem] font-serif text-[#F8F5F0] tracking-tighter mb-8 leading-[0.9] block">
             <GradientShimmer gradient="sunrise" duration={2.5}>{t('servicesList.capabilities') || "Capabilities"}</GradientShimmer>
-          </GsapScrollReveal>
-          <GsapScrollReveal mode="fade" direction="up" delay={0.2} className="text-xl md:text-2xl text-[rgba(255,255,255,0.75)] font-sans font-light leading-relaxed max-w-2xl pl-4 border-l-2 border-[#C9A84C]">
+          </h2>
+          <p className="text-xl md:text-2xl text-[rgba(255,255,255,0.75)] font-sans font-light leading-relaxed max-w-2xl pl-4 border-l-2 border-[#C9A84C]">
             {t('servicesList.capabilitiesDesc') || "We engineer premium visual experiences for luxury brands and cinematic storytellers."}
-          </GsapScrollReveal>
+          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-28 md:gap-y-32">
           {servicesData.map((service, idx) => (
-            <GsapScrollReveal 
+            <div 
               key={idx}
-              mode="card"
-              tiltStrength={7}
-              delay={(idx % 3) * 0.12}
               className="group relative bg-[#121212]/90 rounded-[24px] md:rounded-[32px] p-6 md:p-8 lg:p-10 border border-[#C9A84C]/15 backdrop-blur-xl transition-all duration-500 hover:border-[#C9A84C]/50 hover:shadow-[0_20px_50px_rgba(0,0,0,0.8)] flex flex-col cursor-none mt-16 md:mt-24"
               onMouseEnter={() => updateCursor({ active: true, text: 'EXPLORE' })}
               onMouseLeave={resetCursor}
@@ -118,7 +99,7 @@ export default function Services() {
                   {t('home.startConversation') || "Inquire Now"} ↗
                 </GsapButton>
               </div>
-            </GsapScrollReveal>
+            </div>
           ))}
         </div>
       </div>

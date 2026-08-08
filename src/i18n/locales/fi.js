@@ -43,13 +43,14 @@ export default {
     photography: "Korkeatason Editoriaalinen Valokuvaus",
     videoEditing: "Edistynyt Leikkaus & Värimäärittely",
     socialMedia: "Sosiaalisen Median Vaikutus & Kasvu",
+    digitalMarketing: "Digitaalinen Markkinointi",
     creativeCampaigns: "Luovat Mainoskampanjat",
     commercials: "Kaupalliset Mainos- & TV-elokuvat",
     aerial: "Ilma- & Dronikuvaus",
     soundDesign: "Äänisuunnittelu & Alkuperäiskompositiot"
   },
   projectsPage: {
-    ourWork: "Meidän Masterseloste",
+    ourWork: "Meidän Teoksemme",
     curatedDesc: "Tarkasti kuratoitu valikoima syvintä elokuvallista tarinankerrontaamme ja ikimuistoisia brändikohtaamisia."
   },
   aboutPage: {

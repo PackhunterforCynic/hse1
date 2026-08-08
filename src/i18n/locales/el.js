@@ -43,6 +43,7 @@ export default {
     photography: "Επαγγελματική Editorial Φωτογραφία",
     videoEditing: "Υψηλού Επιπέδου Μοντάζ και Color Grading",
     socialMedia: "Στρατηγικό Marketing στα Κοινωνικά Δίκτυα",
+    digitalMarketing: "Ψηφιακό Μάρκετινγκ",
     creativeCampaigns: "Δημιουργικές Εκστρατείες Επιρροής",
     commercials: "Τηλεοπτικά και Διαφημιστικά Σποτ",
     aerial: "Εναέριες Λήψεις και Drone Διάσταση",

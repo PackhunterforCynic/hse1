@@ -43,6 +43,7 @@ export default {
     photography: "Профессиональная фотосъемка",
     videoEditing: "Видеомонтаж и цветокоррекция",
     socialMedia: "SMM и цифровое продвижение",
+    digitalMarketing: "Цифровой Маркетинг",
     creativeCampaigns: "Креативные кампании",
     commercials: "Рекламные ролики",
     aerial: "Аэрофотосъемка и дрон",

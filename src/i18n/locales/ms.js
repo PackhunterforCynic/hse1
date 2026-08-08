@@ -43,6 +43,7 @@ export default {
     photography: "Fotografi Komersial Kelas Atasan",
     videoEditing: "Penyuntingan Video & Pewarnaan Canggih",
     socialMedia: "Pengurusan Pemasaran Media Sosial",
+    digitalMarketing: "Pemasaran Digital",
     creativeCampaigns: "Kempen Pengiklanan Kreatif & Unik",
     commercials: "Iklan TVC Komersial & Korporat",
     aerial: "Sinematografi Udara & Dron Skala Besar",

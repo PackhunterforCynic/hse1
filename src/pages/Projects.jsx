@@ -21,7 +21,7 @@ export default function Projects() {
 
       <div className="mb-16 md:mb-24">
         <GsapScrollReveal mode="text" className="text-5xl md:text-8xl font-display uppercase tracking-tighter mb-6 block">
-          <GradientShimmer gradient="sunrise" duration={2.5}>{t('projectsPage.ourWork') || "Our Work"}</GradientShimmer>
+          <GradientShimmer gradient="sunrise" duration={2.5}>{t('projectsPage.ourWork') || "Our Works"}</GradientShimmer>
         </GsapScrollReveal>
         <GsapScrollReveal mode="fade" direction="up" delay={0.2} className="text-xl font-serif italic text-white/80 max-w-2xl">
           {t('projectsPage.curatedDesc') || "A curated selection of our finest cinematic storytelling and brand experiences."}

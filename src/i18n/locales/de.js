@@ -43,6 +43,7 @@ export default {
     photography: "Fotografie",
     videoEditing: "Videomontage",
     socialMedia: "Social Media Marketing",
+    digitalMarketing: "Digitales Marketing",
     creativeCampaigns: "Kreative Kampagnen",
     commercials: "Werbefilme",
     aerial: "Luftbild-Kinematografie",

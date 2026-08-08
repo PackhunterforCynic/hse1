@@ -43,13 +43,14 @@ export default {
     photography: "फोटोग्राफी",
     videoEditing: "वीडियो एडिटिंग",
     socialMedia: "सोशल मीडिया मार्केटिंग",
+    digitalMarketing: "डिजिटल मार्केटिंग",
     creativeCampaigns: "क्रिएटिव अभियान्स",
     commercials: "कॉमर्शियल्स",
     aerial: "एरियल सिनेमैटोग्राफी",
     soundDesign: "साउंड डिजाइन"
   },
   projectsPage: {
-    ourWork: "हमारा कार्य",
+    ourWork: "हमारे कार्य",
     curatedDesc: "हमारी श्रेष्ठ सिनेमैटिक स्टोरीटेलिंग और ब्रांड अनुभवों का एक चुनिंदा संग्रह।"
   },
   aboutPage: {

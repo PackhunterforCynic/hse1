@@ -43,13 +43,14 @@ export default {
     photography: "Fotografia",
     videoEditing: "Edição e Montagem",
     socialMedia: "Marketing de Redes Sociais",
+    digitalMarketing: "Marketing Digital",
     creativeCampaigns: "Campanhas Criativas",
     commercials: "Filmes Publicitários",
     aerial: "Cinematografia Aérea",
     soundDesign: "Design de Som"
   },
   projectsPage: {
-    ourWork: "Nosso Trabalho",
+    ourWork: "Nossos Trabalhos",
     curatedDesc: "Uma seleção rigorosa do nosso melhor storytelling cinematográfico e experiências de marca."
   },
   aboutPage: {

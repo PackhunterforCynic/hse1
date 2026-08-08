@@ -43,6 +43,7 @@ export default {
     photography: "High-End Redaksjonelt Foto",
     videoEditing: "Avansert Klipping & Color Grading",
     socialMedia: "SoMe-vekst & Markedsføring",
+    digitalMarketing: "Digital Markedsføring",
     creativeCampaigns: "Banebrytende Reklamekilder",
     commercials: "Kommersielle TVC & Reklamefilmer",
     aerial: "Droneteater og Luftfoto",

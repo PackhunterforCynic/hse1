@@ -43,6 +43,7 @@ export default {
     photography: "புகைப்படக்கலை",
     videoEditing: "வீடியோ எடிட்டிங்",
     socialMedia: "சமூக ஊடக மார்க்கெட்டிங்",
+    digitalMarketing: "டிஜிட்டல் மார்க்கெட்டிங்",
     creativeCampaigns: "படைப்பு பிரச்சாரங்கள்",
     commercials: "விளம்பரங்கள்",
     aerial: "வான்வழி ஒளிப்பதிவு",

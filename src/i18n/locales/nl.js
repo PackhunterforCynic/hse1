@@ -43,6 +43,7 @@ export default {
     photography: "High-End Fotografie",
     videoEditing: "Montage & Color Grading",
     socialMedia: "Social Media Groeikampagnen",
+    digitalMarketing: "Digitale Marketing",
     creativeCampaigns: "Creatieve Reclamestrategieën",
     commercials: "Commercials & Bedrijfsfilms",
     aerial: "Drone- & Luchtcinematografie",

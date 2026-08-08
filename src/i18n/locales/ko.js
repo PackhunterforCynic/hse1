@@ -43,6 +43,7 @@ export default {
     photography: "고급 에디토리얼 사진 촬영",
     videoEditing: "하이엔드 영상 편집 및 색조정",
     socialMedia: "소셜 미디어 바이럴 및 마케팅",
+    digitalMarketing: "디지털 마케팅",
     creativeCampaigns: "크리에이티브 브랜드 캠페인",
     commercials: "상업 CF 및 프로모션 영상",
     aerial: "드론 및 항공 시네마토그래피",

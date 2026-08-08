@@ -43,6 +43,7 @@ export default {
     photography: "High-End Kereskedelmi Fotóegység",
     videoEditing: "Felsőfokú Vágás & Color Grading",
     socialMedia: "Szabadalomértékű Közösségi Média Siker",
+    digitalMarketing: "Digitális Marketing",
     creativeCampaigns: "Átütő Kreatív Kampányszerkezetek",
     commercials: "Üzleti TVC & Kereskedelmi Szpót",
     aerial: "Dróni Dráma & Légimozgalmi Mozgókép",

@@ -43,6 +43,7 @@ export default {
     photography: "High-End Redaktionell Fotografi",
     videoEditing: "Premium Klippning & Färggradiering",
     socialMedia: "Social Media Growth Management",
+    digitalMarketing: "Digital Marknadsföring",
     creativeCampaigns: "Kreativa Reclamkampanjer",
     commercials: "Kommersiell Reklamfilm & TVC",
     aerial: "Avancerad drönare och flygfilmning",
