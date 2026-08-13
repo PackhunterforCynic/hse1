@@ -4,21 +4,26 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/layout/Footer';
 import PageTransition from '../components/common/PageTransition';
 
-import Cursor from '../components/Cursor';
-import FilmEffects from '../components/layout/FilmEffects';
-import FloatingSocials from '../components/layout/FloatingSocials';
-import AIAssistant from '../components/AIAssistant';
+// Defer non-critical UI components to unblock LCP rendering
+const Cursor = lazy(() => import('../components/Cursor'));
+const FilmEffects = lazy(() => import('../components/layout/FilmEffects'));
+const FloatingSocials = lazy(() => import('../components/layout/FloatingSocials'));
+const AIAssistant = lazy(() => import('../components/AIAssistant'));
 
 export default function MainLayout() {
   return (
     <>
-      <Cursor />
-      <FilmEffects />
+      <Suspense fallback={null}>
+        <Cursor />
+        <FilmEffects />
+      </Suspense>
       
       <Navbar />
       
-      <FloatingSocials />
-      <AIAssistant />
+      <Suspense fallback={null}>
+        <FloatingSocials />
+        <AIAssistant />
+      </Suspense>
       
       <main className="w-full min-h-screen">
         <PageTransition>

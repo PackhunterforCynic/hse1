@@ -120,9 +120,10 @@ export default function FeaturedProjects() {
                       style={{ y: isMobile ? 0 : yOffset }}
                     >
                       <img 
-                        data-src={project.cover}
+                        src={project.cover}
                         alt={project.title}
-                        className="lazyload w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 ease-out will-change-transform"
+                        loading="lazy"
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000 ease-out will-change-transform"
                       />
                       <div className="absolute inset-0 bg-black opacity-20 group-hover:opacity-0 transition-opacity duration-1000 ease-out pointer-events-none" />
                     </motion.div>

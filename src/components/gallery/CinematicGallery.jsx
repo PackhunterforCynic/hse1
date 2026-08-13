@@ -179,7 +179,7 @@ export default function CinematicGallery({ project }) {
                 <div className="absolute inset-0 bg-black/20 hover:bg-transparent transition-colors z-10" />
                 {item.type === 'video' ? (
                   <>
-                    <video data-src={item.url} className={`lazyload w-full h-full object-cover filter transition-all duration-500 ${isActive ? 'grayscale-0' : 'grayscale'}`} />
+                    <video src={item.url} className={`w-full h-full object-cover filter transition-all duration-500 ${isActive ? 'grayscale-0' : 'grayscale'}`} />
                     <div className="absolute top-2 right-2 z-20 bg-black/60 backdrop-blur px-2 py-1 rounded text-[8px] font-mono text-white/80 flex items-center gap-1">
                       <Play size={8} /> VIDEO
                     </div>

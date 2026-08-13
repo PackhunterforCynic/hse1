@@ -21,9 +21,12 @@ export const ResponsiveImage = memo(function ResponsiveImage({
   if (!src || error) {
     return (
       <img
-        data-src="/images/fallback.svg"
+        src="/images/fallback.svg"
         alt="Fallback asset"
-        className={`lazyload object-cover ${className}`}
+        className={`object-cover ${className}`}
+        loading={priority ? 'eager' : 'lazy'}
+        fetchPriority={priority ? 'high' : 'low'}
+        decoding={priority ? 'sync' : 'async'}
         {...props}
       />
     );
@@ -43,14 +46,17 @@ export const ResponsiveImage = memo(function ResponsiveImage({
 
     return (
       <picture className="block overflow-hidden relative">
-        <source type="image/avif" data-srcset={generateUnsplashSet('avif')} sizes={sizes} />
-        <source type="image/webp" data-srcset={generateUnsplashSet('webp')} sizes={sizes} />
+        <source type="image/avif" srcSet={generateUnsplashSet('avif')} sizes={sizes} />
+        <source type="image/webp" srcSet={generateUnsplashSet('webp')} sizes={sizes} />
         <img
-          data-src={`${cleanUrl}&w=800&q=75`}
+          src={`${cleanUrl}&w=800&q=75`}
           alt={alt}
           width={width}
           height={height}
-          className={`lazyload transition-opacity duration-500 ease-out ${loaded ? 'opacity-100' : 'opacity-0 bg-surface/40'} ${className}`}
+          className={`transition-opacity duration-500 ease-out ${loaded ? 'opacity-100' : 'opacity-0 bg-surface/40'} ${className}`}
+          loading={priority ? 'eager' : 'lazy'}
+          fetchPriority={priority ? 'high' : 'low'}
+          decoding={priority ? 'sync' : 'async'}
           onLoad={() => setLoaded(true)}
           onError={() => setError(true)}
           {...props}
@@ -63,11 +69,14 @@ export const ResponsiveImage = memo(function ResponsiveImage({
   if (isExternal) {
     return (
       <img
-        data-src={src}
+        src={src}
         alt={alt}
         width={width}
         height={height}
-        className={`lazyload transition-opacity duration-300 ${loaded ? 'opacity-100' : 'opacity-0 bg-surface/30'} ${className}`}
+        className={`transition-opacity duration-300 ${loaded ? 'opacity-100' : 'opacity-0 bg-surface/30'} ${className}`}
+        loading={priority ? 'eager' : 'lazy'}
+        fetchPriority={priority ? 'high' : 'low'}
+        decoding={priority ? 'sync' : 'async'}
         onLoad={() => setLoaded(true)}
         onError={() => setError(true)}
         {...props}
@@ -84,14 +93,17 @@ export const ResponsiveImage = memo(function ResponsiveImage({
 
   return (
     <picture className="block overflow-hidden relative">
-      <source type="image/avif" data-srcset={generateSrcSet('avif')} sizes={sizes} />
-      <source type="image/webp" data-srcset={generateSrcSet('webp')} sizes={sizes} />
+      <source type="image/avif" srcSet={generateSrcSet('avif')} sizes={sizes} />
+      <source type="image/webp" srcSet={generateSrcSet('webp')} sizes={sizes} />
       <img
-        data-src={src}
+        src={src}
         alt={alt}
         width={width}
         height={height}
-        className={`lazyload transition-opacity duration-500 ease-out ${loaded ? 'opacity-100' : 'opacity-0 bg-surface/30'} ${className}`}
+        className={`transition-opacity duration-500 ease-out ${loaded ? 'opacity-100' : 'opacity-0 bg-surface/30'} ${className}`}
+        loading={priority ? 'eager' : 'lazy'}
+        fetchPriority={priority ? 'high' : 'low'}
+        decoding={priority ? 'sync' : 'async'}
         onLoad={() => setLoaded(true)}
         onError={() => setError(true)}
         {...props}

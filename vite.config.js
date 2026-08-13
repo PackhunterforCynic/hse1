@@ -5,7 +5,6 @@ import { fileURLToPath, URL } from "node:url";
 import contactHandler from "./api/contact.js";
 import chatHandler from "./api/chat.js";
 import internshipHandler from "./api/internship.js";
-import internshipRolesHandler from "./api/internshipRoles.js";
 
 // Custom plugin to run Vercel API routes locally in Vite dev server
 const vercelApiPlugin = () => ({
@@ -120,25 +119,6 @@ const vercelApiPlugin = () => ({
             }
           }
         });
-      } else if (req.url === '/api/internship-roles' && req.method === 'GET') {
-        res.status = (code) => {
-          res.statusCode = code;
-          return res;
-        };
-        res.json = (data) => {
-          res.setHeader('Content-Type', 'application/json');
-          res.end(JSON.stringify(data));
-        };
-
-        try {
-          await internshipRolesHandler(req, res);
-        } catch (err) {
-          if (!res.headersSent) {
-            res.status(500).json({ error: 'Internal Server Error' });
-          } else {
-            res.end();
-          }
-        }
       } else {
         next();
       }

@@ -84,83 +84,83 @@ export default async function handler(req, res) {
     console.log(`[Havilah Careers API] Dispatching applicant dossier via Resend to studio recruitment head: ${contactEmail}...`);
     
     const adminHtml = `
-      <div style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; background-color: #f4f4f5; color: #18181b; padding: 40px 15px; margin: 0; line-height: 1.6;">
-        <div style="max-width: 640px; margin: 0 auto; background-color: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);">
+      <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; background-color: #050505; color: #f3f4f6; padding: 40px 15px; margin: 0; line-height: 1.6;">
+        <div style="max-width: 640px; margin: 0 auto; background-color: #0c0c0c; border: 1px solid #26231c; border-radius: 12px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.8);">
           
           <!-- LUXURY BRAND HEADER -->
-          <div style="background-color: #000000; padding: 40px 32px; text-align: center;">
-            <h1 style="margin: 0; font-size: 24px; font-weight: 300; letter-spacing: 0.25em; color: #ffffff; text-transform: uppercase;">HAVILAH</h1>
-            <p style="margin: 12px 0 0; font-size: 11px; letter-spacing: 0.2em; color: #a1a1aa; text-transform: uppercase; font-weight: 500;">Executive Recruitment Dossier</p>
+          <div style="background: linear-gradient(135deg, #14130e 0%, #0a0907 100%); padding: 32px; border-bottom: 1px solid #26231c; text-align: center;">
+            <h1 style="margin: 0; font-size: 22px; font-weight: 300; letter-spacing: 0.35em; color: #efe6d2; text-transform: uppercase;">HAVILAH</h1>
+            <p style="margin: 8px 0 0; font-size: 11px; letter-spacing: 0.25em; color: #b39a64; text-transform: uppercase; font-weight: 600;">🏆 Executive Recruitment Dossier</p>
           </div>
 
           <!-- CONTENT BODY -->
-          <div style="padding: 40px 32px;">
-            <div style="margin-bottom: 32px; text-align: center;">
-              <span style="display: inline-block; padding: 6px 14px; background-color: #fef3c7; color: #b45309; border-radius: 999px; font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;">New Candidate Application</span>
+          <div style="padding: 36px 32px;">
+            <div style="margin-bottom: 28px; padding-bottom: 20px; border-bottom: 1px solid #1a1815;">
+              <span style="display: inline-block; padding: 4px 10px; background-color: #1c1912; border: 1px solid #b39a6444; border-radius: 999px; font-size: 11px; font-weight: 700; color: #efe6d2; letter-spacing: 0.1em; text-transform: uppercase;">New Candidate Application</span>
             </div>
 
             <!-- INTERACTIVE EXECUTIVE ACTION TOOLBAR -->
-            <div style="margin-bottom: 40px; padding: 24px; background-color: #fafafa; border: 1px solid #e4e4e7; border-radius: 8px; text-align: center;">
-              <p style="margin: 0 0 16px; font-size: 12px; font-weight: 600; text-transform: uppercase; color: #71717a; letter-spacing: 0.1em;">Direct Candidate Engagement</p>
-              <div style="display: flex; justify-content: center; gap: 12px; flex-wrap: wrap;">
-                <a href="mailto:${email}?subject=Re: Havilah Studio Internship - ${role} Application Response" style="display: inline-block; padding: 12px 24px; background-color: #000000; color: #ffffff; text-decoration: none; border-radius: 4px; font-size: 13px; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase;">Reply to Candidate</a>
-                ${phone ? `<a href="tel:${phone.replace(/[^0-9+]/g, '')}" style="display: inline-block; padding: 12px 24px; background-color: #ffffff; color: #000000; text-decoration: none; border: 1px solid #e4e4e7; border-radius: 4px; font-size: 13px; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase;">Call Candidate</a>` : ''}
+            <div style="margin-bottom: 32px; padding: 22px; background: #11100c; border: 1px solid #2e281b; border-radius: 10px; text-align: center;">
+              <p style="margin: 0 0 16px; font-size: 12px; font-weight: 600; text-transform: uppercase; color: #a39474; letter-spacing: 0.15em;">Direct Candidate Engagement</p>
+              <div style="display: inline-block;">
+                <a href="mailto:${email}?subject=Re: Havilah Studio Internship - ${role} Application Response" style="display: inline-block; margin: 4px; padding: 12px 24px; background-color: #efe6d2; color: #000000; text-decoration: none; border-radius: 6px; font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;">📧 Reply to Candidate</a>
+                ${phone ? `<a href="tel:${phone.replace(/[^0-9+]/g, '')}" style="display: inline-block; margin: 4px; padding: 12px 24px; background-color: #0c0b08; color: #efe6d2; text-decoration: none; border: 1px solid #b39a64; border-radius: 6px; font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;">📞 Call Candidate</a>` : ''}
               </div>
             </div>
 
             <!-- CANDIDATE DETAILS TABLE -->
-            <h2 style="font-size: 13px; text-transform: uppercase; letter-spacing: 0.1em; color: #52525b; margin: 0 0 16px; font-weight: 700; border-bottom: 2px solid #e4e4e7; padding-bottom: 8px;">Candidate Identity</h2>
-            <table style="width: 100%; border-collapse: collapse; font-size: 15px; margin-bottom: 32px;">
+            <h2 style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.15em; color: #a39474; margin: 0 0 12px; font-weight: 700;">Candidate Identity</h2>
+            <table style="width: 100%; border-collapse: collapse; font-size: 14px; margin-bottom: 30px; background: #080807; border-radius: 8px; border: 1px solid #1a1815;">
               <tr>
-                <td style="padding: 12px 0; border-bottom: 1px solid #f4f4f5; color: #71717a; width: 140px; font-weight: 500;">Full Name</td>
-                <td style="padding: 12px 0; border-bottom: 1px solid #f4f4f5; color: #18181b; font-weight: 600;">${name}</td>
+                <td style="padding: 14px 16px; border-bottom: 1px solid #1a1815; color: #8c8270; width: 130px; font-weight: 500;">Full Name</td>
+                <td style="padding: 14px 16px; border-bottom: 1px solid #1a1815; color: #ffffff; font-weight: 600; font-size: 15px;">${name}</td>
               </tr>
               <tr>
-                <td style="padding: 12px 0; border-bottom: 1px solid #f4f4f5; color: #71717a; font-weight: 500;">Target Role</td>
-                <td style="padding: 12px 0; border-bottom: 1px solid #f4f4f5; color: #000000; font-weight: 700;">${role}</td>
+                <td style="padding: 14px 16px; border-bottom: 1px solid #1a1815; color: #8c8270; font-weight: 500;">Target Role</td>
+                <td style="padding: 14px 16px; border-bottom: 1px solid #1a1815; color: #efe6d2; font-weight: 700;">${role}</td>
               </tr>
               <tr>
-                <td style="padding: 12px 0; border-bottom: 1px solid #f4f4f5; color: #71717a; font-weight: 500;">Email Address</td>
-                <td style="padding: 12px 0; border-bottom: 1px solid #f4f4f5;"><a href="mailto:${email}" style="color: #2563eb; font-weight: 500; text-decoration: none;">${email}</a></td>
+                <td style="padding: 14px 16px; border-bottom: 1px solid #1a1815; color: #8c8270; font-weight: 500;">Email Address</td>
+                <td style="padding: 14px 16px; border-bottom: 1px solid #1a1815;"><a href="mailto:${email}" style="color: #efe6d2; font-weight: 600; text-decoration: underline;">${email}</a></td>
               </tr>
               <tr>
-                <td style="padding: 12px 0; color: #71717a; font-weight: 500;">Direct Phone</td>
-                <td style="padding: 12px 0; color: #18181b;">${phone}</td>
-              </tr>
-            </table>
-
-            <h2 style="font-size: 13px; text-transform: uppercase; letter-spacing: 0.1em; color: #52525b; margin: 0 0 16px; font-weight: 700; border-bottom: 2px solid #e4e4e7; padding-bottom: 8px;">Academic & Technical Profile</h2>
-            <table style="width: 100%; border-collapse: collapse; font-size: 15px; margin-bottom: 32px;">
-              <tr>
-                <td style="padding: 12px 0; border-bottom: 1px solid #f4f4f5; color: #71717a; width: 140px; font-weight: 500;">Institution</td>
-                <td style="padding: 12px 0; border-bottom: 1px solid #f4f4f5; color: #18181b; font-weight: 500;">${institution}</td>
-              </tr>
-              <tr>
-                <td style="padding: 12px 0; border-bottom: 1px solid #f4f4f5; color: #71717a; font-weight: 500;">Field of Study</td>
-                <td style="padding: 12px 0; border-bottom: 1px solid #f4f4f5; color: #18181b;">${fieldOfStudy}</td>
-              </tr>
-              <tr>
-                <td style="padding: 12px 0; color: #71717a; font-weight: 500; vertical-align: top;">Key Skills</td>
-                <td style="padding: 12px 0; color: #3f3f46; font-weight: 500; line-height: 1.6;">${skills}</td>
+                <td style="padding: 14px 16px; color: #8c8270; font-weight: 500;">Direct Phone</td>
+                <td style="padding: 14px 16px; color: #ffffff;">${phone}</td>
               </tr>
             </table>
 
-            <h2 style="font-size: 13px; text-transform: uppercase; letter-spacing: 0.1em; color: #52525b; margin: 0 0 16px; font-weight: 700; border-bottom: 2px solid #e4e4e7; padding-bottom: 8px;">Portfolio & Attachments</h2>
-            <table style="width: 100%; border-collapse: collapse; font-size: 15px;">
+            <h2 style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.15em; color: #a39474; margin: 0 0 12px; font-weight: 700;">Academic & Technical Profile</h2>
+            <table style="width: 100%; border-collapse: collapse; font-size: 14px; margin-bottom: 30px; background: #080807; border-radius: 8px; border: 1px solid #1a1815;">
               <tr>
-                <td style="padding: 12px 0; border-bottom: 1px solid #f4f4f5; color: #71717a; width: 140px; font-weight: 500;">Portfolio Link</td>
-                <td style="padding: 12px 0; border-bottom: 1px solid #f4f4f5; color: #18181b;">${portfolioLink ? `<a href="${portfolioLink}" target="_blank" style="color: #2563eb; text-decoration: none; font-weight: 500;">${portfolioLink}</a>` : '<span style="color: #a1a1aa; font-style: italic;">No link provided</span>'}</td>
+                <td style="padding: 14px 16px; border-bottom: 1px solid #1a1815; color: #8c8270; width: 130px; font-weight: 500;">Institution</td>
+                <td style="padding: 14px 16px; border-bottom: 1px solid #1a1815; color: #ffffff; font-weight: 600;">${institution}</td>
               </tr>
               <tr>
-                <td style="padding: 12px 0; color: #71717a; font-weight: 500;">File Dossier</td>
-                <td style="padding: 12px 0; color: #000000; font-weight: 600;">📎 ${attachments.length} attachment(s) processed</td>
+                <td style="padding: 14px 16px; border-bottom: 1px solid #1a1815; color: #8c8270; font-weight: 500;">Field of Study</td>
+                <td style="padding: 14px 16px; border-bottom: 1px solid #1a1815; color: #ffffff;">${fieldOfStudy}</td>
+              </tr>
+              <tr>
+                <td style="padding: 14px 16px; color: #8c8270; font-weight: 500; vertical-align: top;">Key Skills</td>
+                <td style="padding: 14px 16px; color: #e5e7eb; font-weight: 500; line-height: 1.6;">${skills}</td>
+              </tr>
+            </table>
+
+            <h2 style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.15em; color: #a39474; margin: 0 0 12px; font-weight: 700;">Portfolio & Attachments</h2>
+            <table style="width: 100%; border-collapse: collapse; font-size: 14px; background: #080807; border-radius: 8px; border: 1px solid #1a1815;">
+              <tr>
+                <td style="padding: 14px 16px; border-bottom: 1px solid #1a1815; color: #8c8270; width: 130px; font-weight: 500;">Portfolio Link</td>
+                <td style="padding: 14px 16px; border-bottom: 1px solid #1a1815; color: #ffffff;">${portfolioLink ? `<a href="${portfolioLink}" target="_blank" style="color: #efe6d2; text-decoration: underline; font-weight: 600;">${portfolioLink}</a>` : '<span style="color: #666;">No link provided</span>'}</td>
+              </tr>
+              <tr>
+                <td style="padding: 14px 16px; color: #8c8270; font-weight: 500;">File Dossier</td>
+                <td style="padding: 14px 16px; color: #efe6d2; font-weight: 600;">📎 ${attachments.length} attachment(s) processed (Resume / Work Samples)</td>
               </tr>
             </table>
           </div>
 
           <!-- FOOTER TELEMETRY -->
-          <div style="background-color: #fafafa; padding: 24px 32px; border-top: 1px solid #e4e4e7; text-align: center;">
-            <p style="margin: 0; font-size: 11px; color: #a1a1aa; text-transform: uppercase; letter-spacing: 0.1em;">Havilah Studio Recruitment Engine &bull; Confidentiality Protected</p>
+          <div style="background-color: #060605; padding: 20px 32px; border-top: 1px solid #1e1b15; text-align: center;">
+            <p style="margin: 0; font-size: 11px; color: #6b6456; text-transform: uppercase; letter-spacing: 0.15em;">Havilah Studio Recruitment Engine &bull; Confidentiality Protected</p>
           </div>
         </div>
       </div>
@@ -205,32 +205,23 @@ export default async function handler(req, res) {
         to: [email],
         subject: `Application Received: ${role} - Havilah Studio`,
         html: `
-          <div style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; background-color: #000000; color: #ffffff; padding: 60px 20px; margin: 0;">
-            <div style="max-width: 600px; margin: 0 auto; background-color: #0a0a0a; border: 1px solid #333333; border-radius: 8px; padding: 50px 40px; text-align: left;">
+          <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; background-color: #050505; color: #ffffff; padding: 50px 15px; margin: 0;">
+            <div style="max-width: 580px; margin: 0 auto; background-color: #0c0c0c; border: 1px solid #26231c; border-radius: 12px; padding: 48px 36px; text-align: left; box-shadow: 0 20px 50px rgba(0,0,0,0.8);">
               
-              <div style="text-align: center; margin-bottom: 50px;">
-                <h1 style="text-transform: uppercase; letter-spacing: 0.4em; font-size: 20px; font-weight: 300; margin: 0; color: #ffffff;">HAVILAH</h1>
-                <div style="width: 40px; height: 1px; background-color: #D4AF37; margin: 20px auto 0;"></div>
+              <div style="text-align: center; margin-bottom: 40px; padding-bottom: 32px; border-bottom: 1px solid #1c1a15;">
+                <h1 style="text-transform: uppercase; letter-spacing: 0.35em; font-size: 24px; font-weight: 300; margin: 0; color: #efe6d2;">HAVILAH</h1>
               </div>
 
-              <h2 style="font-size: 18px; color: #ffffff; font-weight: 400; margin-top: 0; margin-bottom: 24px;">Application Received</h2>
-              <p style="font-size: 15px; color: #a1a1aa; line-height: 1.8; margin-bottom: 24px;">Dear ${name},</p>
-              <p style="font-size: 15px; color: #a1a1aa; line-height: 1.8; margin-bottom: 24px;">Thank you for applying for the <strong>${role}</strong> apprenticeship at Havilah Studio.</p>
-              <p style="font-size: 15px; color: #a1a1aa; line-height: 1.8; margin-bottom: 24px;">Our recruitment team has received your application and is currently reviewing your portfolio and credentials. If your background aligns with our upcoming studio projects, our team will reach out directly to coordinate next steps.</p>
+              <p style="font-size: 17px; color: #ffffff; font-weight: 600; margin-top: 0;">Dear ${name},</p>
+              <p style="font-size: 15px; color: #b0a99c; line-height: 1.7;">Thank you for applying for the <strong>${role}</strong> internship program at Havilah Studio.</p>
+              <p style="font-size: 15px; color: #b0a99c; line-height: 1.7;">We have received your dossier and our recruitment leaders are reviewing your portfolio and credentials. If your creative trajectory aligns with our active productions, we will correspond with you to schedule an executive discussion.</p>
+              <p style="font-size: 15px; color: #b0a99c; line-height: 1.7; margin-bottom: 40px;">Expected review duration: 5-7 business days.<br /><span style="color: #efe6d2; font-weight: 600;">Keep creating.</span></p>
               
-              <div style="margin: 40px 0; padding: 24px; background-color: #111111; border-left: 2px solid #D4AF37;">
-                <p style="font-size: 13px; color: #a1a1aa; line-height: 1.6; margin: 0;">
-                  <strong style="color: #ffffff;">Status:</strong> Under Review<br>
-                  <strong style="color: #ffffff;">Role:</strong> ${role}<br>
-                  <strong style="color: #ffffff;">Timeline:</strong> You can expect a status update within 5-7 business days.
-                </p>
-              </div>
-
-              <p style="font-size: 15px; color: #a1a1aa; line-height: 1.8; margin-bottom: 40px;">Keep creating.</p>
-              
-              <div style="padding-top: 30px; border-top: 1px solid #333333;">
-                <p style="font-size: 12px; font-weight: 500; color: #ffffff; margin: 0; text-transform: uppercase; letter-spacing: 0.1em;">Havilah Talent Acquisition</p>
-                <p style="font-size: 11px; color: #71717a; margin: 8px 0 0; text-transform: uppercase; letter-spacing: 0.1em;">Visual Innovation & Digital Strategy</p>
+              <div style="padding-top: 24px; border-top: 1px solid #1c1a15; display: flex; justify-content: space-between; align-items: center;">
+                <div>
+                  <p style="font-size: 13px; font-weight: 700; color: #efe6d2; margin: 0; text-transform: uppercase; letter-spacing: 0.2em;">HAVILAH RECRUITMENT COMMAND</p>
+                  <p style="font-size: 11px; color: #665f52; margin: 4px 0 0; text-transform: uppercase; letter-spacing: 0.1em;">Talent Acquisition & Executive Mentorship</p>
+                </div>
               </div>
 
             </div>

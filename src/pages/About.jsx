@@ -4,7 +4,6 @@ import { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { useCursor } from '../context/CursorContext';
 import TeamModal from '../components/about/TeamModal';
-import PremiumLogo3D from '../components/about/PremiumLogo3D';
 import { useLanguage } from '../i18n';
 import GsapButton from '../components/common/GsapButton';
 import GsapScrollReveal from '../components/common/GsapScrollReveal';
@@ -76,30 +75,35 @@ export default function About() {
         path="/about"
       />
 
-      {/* 3D Hero Section */}
-      <section className="relative w-full h-[100vh] -mt-32 mb-24 overflow-hidden cursor-none" onMouseEnter={() => updateCursor({ active: true, text: 'DRAG' })} onMouseLeave={resetCursor}>
-        <div className="absolute inset-0 z-0">
-          <PremiumLogo3D />
+      {/* Studio Intro */}
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-16 md:gap-32 mb-40">
+        <div className="w-full md:w-1/2">
+          <GsapScrollReveal mode="text" className="text-6xl md:text-9xl font-display uppercase tracking-tighter mb-12 block">
+            <GradientShimmer gradient="sunrise" duration={2.5}>{t('aboutPage.theStudio') || "The Studio"}</GradientShimmer>
+          </GsapScrollReveal>
+          <GsapScrollReveal mode="fade" direction="up" delay={0.2} className="text-2xl md:text-3xl font-serif italic font-light leading-relaxed text-white/90 mb-8">
+            {t('aboutPage.p1') || "We sit at the intersection of story and system. One side of us is behind the camera — building films, photography, and content that make a brand feel real."}
+          </GsapScrollReveal>
+          <GsapScrollReveal mode="fade" direction="up" delay={0.3} className="text-xl md:text-2xl font-serif font-light leading-relaxed text-white/80 mb-6">
+            {t('aboutPage.p2') || "The other side is behind the numbers — running the growth strategy that makes sure the right people actually see it."}
+          </GsapScrollReveal>
+          <GsapScrollReveal mode="fade" direction="up" delay={0.4} className="text-lg font-mono tracking-wide text-white/60">
+            {t('aboutPage.p3') || "Most studios do one or the other. We do both, under one roof, so your story and your growth strategy are never working against each other."}
+          </GsapScrollReveal>
         </div>
-        <div className="absolute bottom-12 left-1/2 -translate-x-1/2 text-white/40 text-[10px] font-mono uppercase tracking-[0.3em] animate-pulse pointer-events-none">
-          Scroll to explore
-        </div>
-      </section>
 
-      {/* Studio Intro Text */}
-      <div className="max-w-4xl mx-auto flex flex-col mb-40 text-center md:text-left relative z-10 px-4">
-        <GsapScrollReveal mode="text" className="text-6xl md:text-9xl font-display uppercase tracking-tighter mb-12 block text-center md:text-left">
-          <GradientShimmer gradient="sunrise" duration={2.5}>{t('aboutPage.theStudio') || "The Studio"}</GradientShimmer>
-        </GsapScrollReveal>
-        <GsapScrollReveal mode="fade" direction="up" delay={0.2} className="text-2xl md:text-3xl font-serif italic font-light leading-relaxed text-white/90 mb-8 text-center md:text-left">
-          {t('aboutPage.p1') || "We sit at the intersection of story and system. One side of us is behind the camera — building films, photography, and content that make a brand feel real."}
-        </GsapScrollReveal>
-        <GsapScrollReveal mode="fade" direction="up" delay={0.3} className="text-xl md:text-2xl font-serif font-light leading-relaxed text-white/80 mb-6 text-center md:text-left">
-          {t('aboutPage.p2') || "The other side is behind the numbers — running the growth strategy that makes sure the right people actually see it."}
-        </GsapScrollReveal>
-        <GsapScrollReveal mode="fade" direction="up" delay={0.4} className="text-lg font-mono tracking-wide text-white/60 text-center md:text-left">
-          {t('aboutPage.p3') || "Most studios do one or the other. We do both, under one roof, so your story and your growth strategy are never working against each other."}
-        </GsapScrollReveal>
+        <div className="w-full md:w-1/2">
+          <GsapScrollReveal mode="image" className="w-full aspect-[3/4] overflow-hidden rounded-2xl shadow-2xl cursor-none">
+            <div className="w-full h-full" onMouseEnter={() => updateCursor({ active: true, text: 'VIEW' })} onMouseLeave={resetCursor}>
+              <img
+                src={'/image.png'}
+                alt="Studio"
+                loading="lazy"
+                className="w-full h-full object-cover filter grayscale-0 md:grayscale md:hover:grayscale-0 transition-all duration-1000"
+              />
+            </div>
+          </GsapScrollReveal>
+        </div>
       </div>
 
       {/* Meet the Team - Studio Hierarchy */}
@@ -134,9 +138,10 @@ export default function About() {
                 </div>
                 <div className="w-full aspect-[4/5] overflow-hidden rounded-2xl mb-6 relative shadow-2xl">
                   <img
-                    data-src={teamData[0].image}
+                    src={teamData[0].image}
                     alt={teamData[0].name}
-                    className="lazyload w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000 ease-out"
+                    loading="lazy"
+                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-1000 ease-out"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-70 group-hover:opacity-30 transition-opacity duration-500" />
                 </div>
@@ -198,9 +203,10 @@ export default function About() {
                 
                 <div className="w-full aspect-[4/5] overflow-hidden rounded-xl mb-6 relative shadow-md">
                   <img
-                    data-src={member.image}
+                    src={member.image}
                     alt={member.name}
-                    className="lazyload w-full h-full object-cover filter grayscale group-hover:grayscale-0 group-hover:scale-108 transition-all duration-700 ease-out"
+                    loading="lazy"
+                    className="w-full h-full object-cover filter grayscale group-hover:grayscale-0 group-hover:scale-108 transition-all duration-700 ease-out"
                   />
                   <div className="absolute inset-0 border border-transparent group-hover:border-[#CFA65B]/30 transition-colors duration-500 rounded-xl pointer-events-none" />
                 </div>
@@ -232,9 +238,10 @@ export default function About() {
             >
               <div className="w-full aspect-[4/5] overflow-hidden rounded-xl mb-6 relative shadow-md">
                 <img
-                  data-src={member.image}
+                  src={member.image}
                   alt={member.name}
-                  className="lazyload w-full h-full object-cover filter grayscale-0 transition-all duration-700 ease-out"
+                  loading="lazy"
+                  className="w-full h-full object-cover filter grayscale-0 transition-all duration-700 ease-out"
                 />
               </div>
               <h3 className="text-2xl font-heading uppercase tracking-wide">{member.name}</h3>

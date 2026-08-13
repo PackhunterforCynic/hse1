@@ -16,9 +16,9 @@ export default function StudioCulture() {
           <div className="relative aspect-[4/5] rounded-3xl overflow-hidden grayscale hover:grayscale-0 transition-all duration-700">
             {/* Placeholder for behind-the-scenes image */}
             <img 
-              data-src={havilahLogo} 
+              src={havilahLogo} 
               alt="Studio Culture" 
-              className="lazyload w-full h-full object-cover"
+              className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-black/40 mix-blend-multiply" />
             <div className="absolute bottom-8 left-8">

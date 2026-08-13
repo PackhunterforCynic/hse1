@@ -301,10 +301,10 @@ export function CoverflowCarousel({
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  data-src={slide.src}
+                  src={slide.src}
                   alt={slide.alt}
                   draggable={false}
-                  className="lazyload h-full w-full select-none object-cover"
+                  className="h-full w-full select-none object-cover"
                 />
               </div>
             ))}

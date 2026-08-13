@@ -34,41 +34,12 @@ type Pages = {
   "/internship": {
     params: {};
   };
-  "/submit-testimonial": {
-    params: {};
-  };
-  "/admin/login": {
-    params: {};
-  };
-  "/admin": {
-    params: {};
-  };
-  "/admin/services": {
-    params: {};
-  };
-  "/admin/contacts": {
-    params: {};
-  };
-  "/admin/internships": {
-    params: {};
-  };
-  "/admin/testimonials": {
-    params: {};
-  };
-  "/admin/settings": {
-    params: {};
-  };
-  "/*": {
-    params: {
-      "*": string;
-    };
-  };
 };
 
 type RouteFiles = {
   "root.jsx": {
     id: "root";
-    page: "/" | "/projects" | "/projects/:id" | "/services" | "/about" | "/contact" | "/internship" | "/submit-testimonial" | "/admin/login" | "/admin" | "/admin/services" | "/admin/contacts" | "/admin/internships" | "/admin/testimonials" | "/admin/settings" | "/*";
+    page: "/" | "/projects" | "/projects/:id" | "/services" | "/about" | "/contact" | "/internship";
   };
   "../src/pages/Home.jsx": {
     id: "../src/pages/Home";
@@ -98,46 +69,6 @@ type RouteFiles = {
     id: "../src/pages/Internship";
     page: "/internship";
   };
-  "../src/pages/SubmitTestimonial.jsx": {
-    id: "../src/pages/SubmitTestimonial";
-    page: "/submit-testimonial";
-  };
-  "../src/pages/admin/Login.jsx": {
-    id: "../src/pages/admin/Login";
-    page: "/admin/login";
-  };
-  "../src/pages/admin/AdminLayout.jsx": {
-    id: "../src/pages/admin/AdminLayout";
-    page: "/admin" | "/admin/services" | "/admin/contacts" | "/admin/internships" | "/admin/testimonials" | "/admin/settings";
-  };
-  "../src/pages/admin/Dashboard.jsx": {
-    id: "../src/pages/admin/Dashboard";
-    page: "/admin";
-  };
-  "../src/pages/admin/Services.jsx": {
-    id: "../src/pages/admin/Services";
-    page: "/admin/services";
-  };
-  "../src/pages/admin/Contacts.jsx": {
-    id: "../src/pages/admin/Contacts";
-    page: "/admin/contacts";
-  };
-  "../src/pages/admin/Internships.jsx": {
-    id: "../src/pages/admin/Internships";
-    page: "/admin/internships";
-  };
-  "../src/pages/admin/Testimonials.jsx": {
-    id: "../src/pages/admin/Testimonials";
-    page: "/admin/testimonials";
-  };
-  "../src/pages/admin/Settings.jsx": {
-    id: "../src/pages/admin/Settings";
-    page: "/admin/settings";
-  };
-  "../src/pages/NotFound.jsx": {
-    id: "../src/pages/NotFound";
-    page: "/*";
-  };
 };
 
 type RouteModules = {
@@ -149,14 +80,4 @@ type RouteModules = {
   "../src/pages/About": unknown;
   "../src/pages/Contact": unknown;
   "../src/pages/Internship": unknown;
-  "../src/pages/SubmitTestimonial": unknown;
-  "../src/pages/admin/Login": unknown;
-  "../src/pages/admin/AdminLayout": unknown;
-  "../src/pages/admin/Dashboard": unknown;
-  "../src/pages/admin/Services": unknown;
-  "../src/pages/admin/Contacts": unknown;
-  "../src/pages/admin/Internships": unknown;
-  "../src/pages/admin/Testimonials": unknown;
-  "../src/pages/admin/Settings": unknown;
-  "../src/pages/NotFound": unknown;
 };

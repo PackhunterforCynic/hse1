@@ -32,12 +32,12 @@ export default function StepReview({ formData, files }) {
 
         <div className="border-b border-white/10 pb-4">
           <p className="text-[10px] font-mono tracking-widest uppercase text-white/40 mb-1">Education</p>
-          <p className="font-sans text-sm">{formData.fieldOfStudy || 'Not Specified'} at {formData.institution || 'Not Specified'}</p>
+          <p className="font-sans text-sm">{formData.fieldOfStudy} at {formData.institution}</p>
         </div>
 
         <div className="border-b border-white/10 pb-4">
           <p className="text-[10px] font-mono tracking-widest uppercase text-white/40 mb-1">Skills</p>
-          <p className="font-sans text-sm truncate">{Array.isArray(formData.skills) ? formData.skills.join(', ') : formData.skills}</p>
+          <p className="font-sans text-sm truncate">{formData.skills}</p>
         </div>
 
         <div>

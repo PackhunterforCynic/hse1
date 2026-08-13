@@ -148,10 +148,10 @@ export default function ProjectGallery({ images = [], title = "Project Architect
 
   return (
     <>
-      <section className="py-28 px-4 sm:px-8 md:px-12 max-w-screen-2xl mx-auto w-full bg-[#060606] relative overflow-hidden">
+      <section className="py-28 px-4 sm:px-8 md:px-12 max-w-[1920px] mx-auto w-full bg-[#060606] relative overflow-hidden">
         
         {/* Subtle background glow */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-32 bg-[#EFE6D2]/5 blur-[60px] sm:blur-[120px] pointer-events-none" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-32 bg-[#EFE6D2]/5 blur-[120px] pointer-events-none" />
 
         {/* SECTION HEADER & STUDIO STATS BAR */}
         <div className="max-w-7xl mx-auto mb-16 space-y-8">
@@ -270,7 +270,7 @@ export default function ProjectGallery({ images = [], title = "Project Architect
             </button>
           </motion.div>
         ) : (
-          <div className="columns-1 md:columns-2 lg:columns-3 gap-6 md:gap-8 space-y-6 md:space-y-8 max-w-7xl mx-auto">
+          <div className="columns-1 md:columns-2 lg:columns-3 gap-6 md:gap-8 space-y-6 md:space-y-8 max-w-[1700px] mx-auto">
             {filteredImages.map((img) => (
               <motion.div
                 key={img.id}
@@ -285,9 +285,9 @@ export default function ProjectGallery({ images = [], title = "Project Architect
                 {/* Media */}
                 {img.type === 'video' ? (
                   <video 
-                    data-src={img.src}
+                    src={img.src}
                     poster={img.poster}
-                    className="lazyload w-full h-auto object-cover filter brightness-[0.88] group-hover:brightness-100 group-hover:scale-[1.04] transition-all duration-[1.5s] ease-out block"
+                    className="w-full h-auto object-cover filter brightness-[0.88] group-hover:brightness-100 group-hover:scale-[1.04] transition-all duration-[1.5s] ease-out block"
                     autoPlay
                     muted
                     loop
@@ -296,9 +296,10 @@ export default function ProjectGallery({ images = [], title = "Project Architect
                 ) : img.type === 'youtube' ? (
                   <div className="relative w-full h-auto">
                     <img 
-                      data-src={img.poster || `https://img.youtube.com/vi/${img.videoId}/maxresdefault.jpg`}
+                      src={img.poster || `https://img.youtube.com/vi/${img.videoId}/maxresdefault.jpg`}
                       alt={`${title} - Frame ${img.index + 1}`}
-                      className="lazyload w-full h-auto object-cover filter brightness-[0.88] group-hover:brightness-100 group-hover:scale-[1.04] transition-all duration-[1.5s] ease-out block"
+                      loading="lazy"
+                      className="w-full h-auto object-cover filter brightness-[0.88] group-hover:brightness-100 group-hover:scale-[1.04] transition-all duration-[1.5s] ease-out block"
                     />
                     <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
                        <div className="w-14 h-14 bg-rose-600/90 rounded-full flex items-center justify-center text-white backdrop-blur-md shadow-[0_0_30px_rgba(225,29,72,0.6)] border border-white/20">
@@ -308,9 +309,10 @@ export default function ProjectGallery({ images = [], title = "Project Architect
                   </div>
                 ) : (
                   <img 
-                    data-src={img.src}
+                    src={img.src}
                     alt={`${title} - Frame ${img.index + 1}`}
-                    className="lazyload w-full h-auto object-cover filter brightness-[0.88] group-hover:brightness-100 group-hover:scale-[1.04] transition-all duration-[1.5s] ease-out block"
+                    loading="lazy"
+                    className="w-full h-auto object-cover filter brightness-[0.88] group-hover:brightness-100 group-hover:scale-[1.04] transition-all duration-[1.5s] ease-out block"
                   />
                 )}
 
