@@ -98,7 +98,7 @@ export default function GsapButton({
   const isOutline = variant === 'outline';
   const isText = variant === 'text';
 
-  const baseClasses = `relative inline-flex items-center justify-center overflow-hidden font-mono text-xs uppercase tracking-[0.25em] transition-all duration-300 rounded-full cursor-none group ${className}`;
+  const baseClasses = `relative inline-flex items-center justify-center overflow-hidden font-mono text-xs uppercase tracking-[0.25em] transition-all duration-300 rounded-full cursor-none group min-h-[44px] min-w-[44px] ${className}`;
   
   const variantClasses = {
     primary: 'px-8 py-4 bg-[#CFA65B] text-[#0C1220] font-semibold shadow-[0_4px_20px_rgba(207,166,91,0.3)] md:hover:shadow-[0_8px_30px_rgba(207,166,91,0.5)] border border-[#CFA65B]',

@@ -7,10 +7,16 @@ import { Search } from 'lucide-react';
 import AISearch from './AISearch';
 import NavbarLogo from './common/NavbarLogo';
 import LanguageSelector from './common/LanguageSelector';
+import { useResponsive } from '../hooks/useResponsive';
 
 const Navbar = memo(function Navbar() {
   const { updateCursor, resetCursor } = useCursor();
   const { t } = useLanguage();
+  const { width } = useResponsive();
+  
+  // Dynamically determine if we need the compact/drawer navigation based on available width
+  // 900px is roughly the threshold where our current nav links start getting cramped
+  const isCompact = width < 950;
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
@@ -72,60 +78,64 @@ const Navbar = memo(function Navbar() {
             <NavbarLogo />
           </Link>
           
-          {/* Desktop Nav (lg: 1024px and up) */}
-          <div className="hidden lg:flex items-center space-x-5 xl:space-x-10 text-xs xl:text-sm font-sans uppercase tracking-widest relative z-50 shrink-0">
-            {navLinks.map((item) => (
-              <Link
-                key={item.key}
-                to={item.path}
-                prefetch="intent"
-                className="relative overflow-hidden group md:hover:text-accent transition-colors duration-300"
+          {/* Desktop Nav (Only shown if !isCompact) */}
+          {!isCompact && (
+            <div className="flex items-center space-x-5 xl:space-x-10 text-xs xl:text-sm font-sans uppercase tracking-widest relative z-50 shrink-0">
+              {navLinks.map((item) => (
+                <Link
+                  key={item.key}
+                  to={item.path}
+                  prefetch="intent"
+                  className="relative overflow-hidden group md:hover:text-accent transition-colors duration-300"
+                  onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  <span className="block transition-transform duration-500 ease-[cubic-bezier(0.76,0,0.24,1)] md:group-hover:-translate-y-full">
+                    {item.label}
+                  </span>
+                  <span className="absolute top-0 left-0 block translate-y-full transition-transform duration-500 ease-[cubic-bezier(0.76,0,0.24,1)] md:group-hover:translate-y-0 text-accent">
+                    {item.label}
+                  </span>
+                </Link>
+              ))}
+              
+              <button 
+                onClick={() => setSearchOpen(true)}
+                className="relative overflow-hidden group md:hover:text-accent transition-colors duration-300 ml-2 flex items-center justify-center min-w-[44px] min-h-[44px] shrink-0"
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
+                aria-label={t('navigation.search')}
               >
-                <span className="block transition-transform duration-500 ease-[cubic-bezier(0.76,0,0.24,1)] md:group-hover:-translate-y-full">
-                  {item.label}
-                </span>
-                <span className="absolute top-0 left-0 block translate-y-full transition-transform duration-500 ease-[cubic-bezier(0.76,0,0.24,1)] md:group-hover:translate-y-0 text-accent">
-                  {item.label}
-                </span>
-              </Link>
-            ))}
-            
-            <button 
-              onClick={() => setSearchOpen(true)}
-              className="relative overflow-hidden group md:hover:text-accent transition-colors duration-300 ml-2 flex items-center shrink-0"
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-              aria-label={t('navigation.search')}
-            >
-              <Search size={18} />
-            </button>
+                <Search size={18} />
+              </button>
 
-            <LanguageSelector isMobile={false} />
-          </div>
+              <LanguageSelector isMobile={false} />
+            </div>
+          )}
 
-          {/* Mobile & Tablet Toggle & Controls (Below 1024px) */}
-          <div className="lg:hidden flex items-center gap-2 sm:gap-3 relative z-50 shrink-0">
-            <LanguageSelector isMobile={false} />
-            
-            <button 
-              onClick={() => setSearchOpen(true)}
-              className="text-white hover:text-accent transition-colors p-1"
-              aria-label={t('navigation.search')}
-            >
-              <Search size={20} />
-            </button>
-            <button 
-              className="relative w-8 h-8 flex flex-col justify-center items-center gap-2 ml-1 cursor-none"
-              onClick={() => setMenuOpen(!menuOpen)}
-              onMouseEnter={() => updateCursor({ active: true, text: menuOpen ? 'CLOSE' : 'MENU' })}
-              onMouseLeave={handleMouseLeave}
-            >
-              <span className={`block w-full h-[1px] bg-white transition-transform duration-500 ${menuOpen ? 'rotate-45 translate-y-[4.5px]' : ''}`} />
-              <span className={`block w-full h-[1px] bg-white transition-transform duration-500 ${menuOpen ? '-rotate-45 -translate-y-[4.5px]' : ''}`} />
-            </button>
-          </div>
+          {/* Drawer Toggle & Controls (Shown if isCompact) */}
+          {isCompact && (
+            <div className="flex items-center gap-2 sm:gap-3 relative z-50 shrink-0">
+              <LanguageSelector isMobile={false} />
+              
+              <button 
+                onClick={() => setSearchOpen(true)}
+                className="text-white hover:text-accent transition-colors p-2 min-w-[44px] min-h-[44px] flex items-center justify-center"
+                aria-label={t('navigation.search')}
+              >
+                <Search size={20} />
+              </button>
+              <button 
+                className="relative min-w-[44px] min-h-[44px] flex flex-col justify-center items-center gap-2 ml-1 cursor-none"
+                onClick={() => setMenuOpen(!menuOpen)}
+                onMouseEnter={() => updateCursor({ active: true, text: menuOpen ? 'CLOSE' : 'MENU' })}
+                onMouseLeave={handleMouseLeave}
+              >
+                <span className={`block w-full h-[1px] bg-white transition-transform duration-500 ${menuOpen ? 'rotate-45 translate-y-[4.5px]' : ''}`} />
+                <span className={`block w-full h-[1px] bg-white transition-transform duration-500 ${menuOpen ? '-rotate-45 -translate-y-[4.5px]' : ''}`} />
+              </button>
+            </div>
+          )}
         </div>
       </motion.nav>
 

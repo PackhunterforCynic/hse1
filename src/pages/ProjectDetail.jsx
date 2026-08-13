@@ -179,7 +179,7 @@ export default function ProjectDetail() {
           className="block w-full py-32 md:py-48 text-center bg-black hover:bg-white group transition-colors duration-700 relative overflow-hidden mt-24" 
         >
           <div className="absolute inset-0 z-0 opacity-20 group-hover:opacity-10 transition-opacity duration-700">
-             {nextProject.cover && <img src={nextProject.cover} className="w-full h-full object-cover filter grayscale" alt="" />}
+             {nextProject.cover && <img data-src={nextProject.cover} className="lazyload w-full h-full object-cover filter grayscale" alt="" />}
           </div>
           <div className="relative z-10">
             <p className="text-sm font-mono tracking-[0.3em] uppercase text-white/50 group-hover:text-black/50 mb-6 transition-colors duration-700">Up Next</p>

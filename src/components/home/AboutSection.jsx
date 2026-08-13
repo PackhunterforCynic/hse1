@@ -78,8 +78,8 @@ const AboutSection = memo(function AboutSection() {
     <section ref={containerRef} className="py-36 px-4 md:px-12 bg-primary text-white w-full overflow-hidden relative z-10 border-t border-white/5">
       
       {/* Cinematic Ambient Glows & Grid Accent */}
-      <div className="absolute top-1/3 left-0 w-[600px] h-[600px] bg-accent/5 rounded-full blur-[160px] pointer-events-none mix-blend-screen" />
-      <div className="absolute bottom-10 right-10 w-[500px] h-[500px] bg-blue-500/5 rounded-full blur-[140px] pointer-events-none mix-blend-screen" />
+      <div className="absolute top-1/3 left-0 w-[clamp(300px,50vw,600px)] aspect-square bg-accent/5 rounded-full blur-[60px] sm:blur-[160px] pointer-events-none mix-blend-screen" />
+      <div className="absolute bottom-10 right-10 w-[clamp(250px,40vw,500px)] aspect-square bg-blue-500/5 rounded-full blur-[60px] sm:blur-[140px] pointer-events-none mix-blend-screen" />
 
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start justify-between gap-16 md:gap-20 relative z-10">
         

@@ -49,7 +49,7 @@ export default function LanguageSelector({ isMobile = false }) {
         aria-haspopup="true"
         aria-expanded={isOpen}
         aria-label={t('navigation.selectLanguage')}
-        className={`flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 md:hover:bg-white/10 border border-white/15 md:hover:border-accent/60 text-xs font-mono uppercase tracking-wider transition-all duration-300 ${
+        className={`flex items-center justify-center min-w-[44px] min-h-[44px] gap-2 px-3 py-1.5 rounded-full bg-white/5 md:hover:bg-white/10 border border-white/15 md:hover:border-accent/60 text-xs font-mono uppercase tracking-wider transition-all duration-300 ${
           isMobile ? 'text-base py-2 px-4 border-white/30 text-white' : 'text-white/90 md:hover:text-accent'
         }`}
       >
@@ -93,7 +93,7 @@ export default function LanguageSelector({ isMobile = false }) {
                     onClick={() => handleSelect(lang.code)}
                     onMouseEnter={() => updateCursor({ active: true, text: lang.native })}
                     onMouseLeave={resetCursor}
-                    className={`w-full px-4 py-2.5 flex items-center justify-between text-left text-xs font-sans tracking-wide transition-colors ${
+                    className={`w-full min-h-[44px] px-4 py-2.5 flex items-center justify-between text-left text-xs font-sans tracking-wide transition-colors ${
                       isSelected
                         ? 'bg-white/15 text-accent font-semibold'
                         : 'text-white/80 md:hover:bg-white/10 md:hover:text-white'

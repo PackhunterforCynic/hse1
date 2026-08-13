@@ -70,22 +70,22 @@ const Showreel = memo(function Showreel() {
         {/* Mobile Video */}
         <video 
           ref={mobileVideoRef}
-          src="/videos/show reel/Content Creation Praise Ayodeji.mp4"
+          data-src="/videos/show reel/Content Creation Praise Ayodeji.mp4"
           preload="metadata"
           muted={isMuted}
           loop 
           playsInline
-          className="object-cover w-full h-full md:hidden scale-105"
+          className="lazyload object-cover w-full h-full md:hidden scale-105"
         />
         {/* Desktop Video */}
         <video 
           ref={desktopVideoRef}
-          src="/videos/show reel/window_compressed.mp4"
+          data-src="/videos/show reel/window_compressed.mp4"
           preload="metadata"
           muted={isMuted}
           loop 
           playsInline
-          className="object-cover w-full h-full hidden md:block scale-105"
+          className="lazyload object-cover w-full h-full hidden md:block scale-105"
         />
         
         {/* Subtle cinematic vignette */}

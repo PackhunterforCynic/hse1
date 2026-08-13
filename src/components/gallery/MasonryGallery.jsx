@@ -33,9 +33,9 @@ export default function MasonryGallery({ gallery }) {
                 <div className="relative w-full h-auto aspect-video">
                   {/* Using a poster or just muted video without autoplay to save performance */}
                   <video 
-                    src={media.url} 
-                    className="w-full h-full object-cover"
-                    preload="metadata"
+                    data-src={media.url} 
+                    className="lazyload w-full h-full object-cover"
+                    preload="none"
                     muted 
                     playsInline
                   />
@@ -50,7 +50,6 @@ export default function MasonryGallery({ gallery }) {
                   <ResponsiveImage 
                     src={media.url} 
                     className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700"
-                    loading="lazy"
                   />
                   <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity p-2 bg-black/40 backdrop-blur-md rounded-full text-white">
                     <Maximize2 size={16} />

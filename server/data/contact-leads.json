@@ -1,6 +1,16 @@
 {
   "leads": [
     {
+      "id": "contact_1786507480457_robin",
+      "name": "robin",
+      "email": "hi@gmail.com",
+      "phone": "6768687633",
+      "service": "Photography",
+      "message": "hejhsbdjhbsd 2012",
+      "timestamp": "2026-08-12T04:04:40.457Z",
+      "status": "New"
+    },
+    {
       "id": "contact_1785331677654_robinsonj",
       "name": "Robinson J",
       "email": "robinsonj16506@gmail.com",
@@ -11,6 +21,6 @@
       "timestamp": "2026-07-29T13:27:57.654Z"
     }
   ],
-  "updatedAt": "2026-07-29T13:45:35.591Z",
-  "totalLeads": 1
+  "updatedAt": "2026-08-12T04:04:40.458Z",
+  "totalLeads": 2
 }

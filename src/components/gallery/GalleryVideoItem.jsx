@@ -52,9 +52,9 @@ export default function GalleryVideoItem({ item, originalIdx, openLightbox, next
         <div className="absolute bottom-4 right-4 md:bottom-6 md:right-6 bg-black/80 backdrop-blur-md p-2 rounded-lg border border-white/10 flex items-center gap-3 shadow-2xl z-30 pointer-events-none transition-all duration-500 opacity-100">
           <div className="w-16 h-10 md:w-20 md:h-12 rounded overflow-hidden">
             {nextItemData.type === 'video' ? (
-              <video src={nextItemData.url} className="w-full h-full object-cover" />
+              <video data-src={nextItemData.url} className="lazyload w-full h-full object-cover" />
             ) : (
-              <img src={nextItemData.url} className="w-full h-full object-cover" />
+              <img data-src={nextItemData.url} className="lazyload w-full h-full object-cover" />
             )}
           </div>
           <div className="pr-2">

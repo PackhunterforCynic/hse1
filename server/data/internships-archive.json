@@ -1,5 +1,20 @@
 {
-  "updatedAt": "2026-07-29T13:18:06.288Z",
-  "totalApplications": 0,
-  "applications": []
+  "updatedAt": "2026-08-12T06:15:21.636Z",
+  "totalApplications": 1,
+  "applications": [
+    {
+      "id": "intern_1786515321636_testuser",
+      "name": "Test User",
+      "email": "test@test.com",
+      "phone": "1234567890",
+      "institution": "Self-Taught",
+      "fieldOfStudy": "Photography",
+      "role": "Photography Intern",
+      "skills": "Photoshop, Lightroom, Premiere Pro",
+      "portfolioLink": "—",
+      "attachmentCount": 0,
+      "timestamp": "2026-08-12T06:15:21.636Z",
+      "status": "New"
+    }
+  ]
 }

@@ -152,9 +152,9 @@ export default function AISearch({ isOpen, onClose }) {
                       >
                         <div className="w-full md:w-48 h-32 overflow-hidden rounded-lg bg-white/5 backdrop-blur-md shrink-0">
                           <img 
-                            src={project.cover} 
+                            data-src={project.cover} 
                             alt={project.title} 
-                            className="w-full h-full object-cover filter brightness-[0.8] group-hover:brightness-100 group-hover:scale-105 transition-all duration-700" 
+                            className="lazyload w-full h-full object-cover filter brightness-[0.8] group-hover:brightness-100 group-hover:scale-105 transition-all duration-700" 
                           />
                         </div>
                         <div className="flex-1 flex flex-col gap-2">

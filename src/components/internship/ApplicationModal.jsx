@@ -1,246 +1,283 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, ArrowRight, ArrowLeft } from 'lucide-react';
-import { useCursor } from '../../context/CursorContext';
-import { useInternshipForm } from '../../hooks/useInternshipForm';
-import { internshipSchema } from '../../lib/validation';
-
+import { X } from 'lucide-react';
 import StepPersonal from './StepPersonal';
 import StepEducation from './StepEducation';
-import StepSkills from './StepSkills';
 import StepPortfolio from './StepPortfolio';
+import StepSkills from './StepSkills';
 import StepReview from './StepReview';
 import SuccessAnimation from './SuccessAnimation';
+import GsapButton from '../common/GsapButton';
+
+const STEPS = [
+  { id: 'personal', title: 'Personal', component: StepPersonal },
+  { id: 'education', title: 'Education', component: StepEducation },
+  { id: 'portfolio', title: 'Portfolio', component: StepPortfolio },
+  { id: 'skills', title: 'Skills', component: StepSkills },
+  { id: 'review', title: 'Review', component: StepReview }
+];
 
 export default function ApplicationModal({ isOpen, onClose, selectedRole }) {
-  const { updateCursor, resetCursor } = useCursor();
-  const { currentStep, nextStep, prevStep, formData, updateFormData, files, updateFiles, resetForm, setStep } = useInternshipForm();
-  
-  const [errors, setErrors] = useState({});
+  const [currentStep, setCurrentStep] = useState(0);
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState(null); // 'success' | 'error' | null
+  const [isSuccess, setIsSuccess] = useState(false);
+  
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    institution: '',
+    fieldOfStudy: '',
+    graduationYear: '',
+    portfolioLink: '',
+    linkedinUrl: '',
+    skills: [],
+    whyHavilah: '',
+    role: selectedRole || ''
+  });
 
-  // Pre-fill role when opened
+  const [files, setFiles] = useState({});
+  const [errors, setErrors] = useState({});
+
   useEffect(() => {
-    if (isOpen && selectedRole) {
-      updateFormData({ role: selectedRole });
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+      if (selectedRole) {
+        setFormData(prev => ({ ...prev, role: selectedRole }));
+      }
+    } else {
+      document.body.style.overflow = 'auto';
+      // Reset after close animation
+      setTimeout(() => {
+        setCurrentStep(0);
+        setIsSuccess(false);
+        setErrors({});
+      }, 500);
     }
+    return () => { document.body.style.overflow = 'auto'; };
   }, [isOpen, selectedRole]);
 
-  // Lock body scroll
-  useEffect(() => {
-    if (isOpen) document.body.style.overflow = 'hidden';
-    else document.body.style.overflow = '';
-    return () => { document.body.style.overflow = ''; };
-  }, [isOpen]);
-
-  const handleClose = () => {
-    onClose();
-    setTimeout(() => {
-      resetForm();
-      setErrors({});
-      setSubmitStatus(null);
-    }, 500);
+  const updateFormData = (newData) => {
+    setFormData(prev => ({ ...prev, ...newData }));
+    setErrors({});
   };
 
-  const validateStep = () => {
-    try {
-      if (currentStep === 1) {
-        internshipSchema.pick({ name: true, email: true, phone: true }).parse(formData);
-      } else if (currentStep === 2) {
-        internshipSchema.pick({ institution: true, fieldOfStudy: true }).parse(formData);
-      } else if (currentStep === 3) {
-        internshipSchema.pick({ role: true, skills: true }).parse(formData);
-      } else if (currentStep === 4) {
-        if (!files.resume) {
-          setErrors({ resume: "Resume/CV is required (PDF format)" });
-          return false;
-        }
-        internshipSchema.pick({ portfolioLink: true }).parse(formData);
-      }
-      setErrors({});
-      return true;
-    } catch (error) {
-      const formattedErrors = {};
-      error.errors.forEach(err => {
-        formattedErrors[err.path[0]] = err.message;
-      });
-      setErrors(formattedErrors);
-      return false;
+  const updateFiles = (newFiles) => {
+    setFiles(prev => ({ ...prev, ...newFiles }));
+    setErrors({});
+  };
+
+  const validateStep = (stepIndex) => {
+    const newErrors = {};
+    if (stepIndex === 0) {
+      if (!formData.name.trim()) newErrors.name = "Name is required";
+      if (!formData.email.trim()) newErrors.email = "Email is required";
+      else if (!/^\S+@\S+\.\S+$/.test(formData.email)) newErrors.email = "Invalid email format";
+      if (!formData.phone.trim()) newErrors.phone = "Phone is required";
     }
+    if (stepIndex === 1) {
+      if (!formData.institution || !formData.institution.trim()) newErrors.institution = "Institution is required";
+      if (!formData.fieldOfStudy || !formData.fieldOfStudy.trim()) newErrors.fieldOfStudy = "Field of Study is required";
+    }
+    if (stepIndex === 2) {
+      // Portfolio URL is optional now as per schema
+    }
+    
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
   };
 
   const handleNext = () => {
-    if (validateStep()) {
-      nextStep();
+    if (validateStep(currentStep)) {
+      setCurrentStep(prev => Math.min(prev + 1, STEPS.length - 1));
     }
   };
 
-  const getBase64 = (file) => new Promise((resolve, reject) => {
+  const handleBack = () => {
+    setCurrentStep(prev => Math.max(prev - 1, 0));
+    setErrors({});
+  };
+
+  const fileToBase64 = (file) => new Promise((resolve, reject) => {
     const reader = new FileReader();
     reader.readAsDataURL(file);
-    reader.onload = () => resolve(reader.result.split(',')[1]); // get base64 part
+    reader.onload = () => resolve({ name: file.name, content: reader.result });
     reader.onerror = error => reject(error);
   });
 
   const handleSubmit = async () => {
-    if (!validateStep()) return;
-
+    if (!validateStep(currentStep)) return;
+    
     setIsSubmitting(true);
     setErrors({});
-
+    
     try {
-      const payload = { ...formData };
+      let resumeData = null;
+      let portfolioData = null;
       
       if (files.resume) {
-        payload.resume = {
-          name: files.resume.name,
-          content: await getBase64(files.resume)
-        };
+        resumeData = await fileToBase64(files.resume);
       }
-      
       if (files.portfolio) {
-        payload.portfolio = {
-          name: files.portfolio.name,
-          content: await getBase64(files.portfolio)
-        };
+        portfolioData = await fileToBase64(files.portfolio);
       }
+
+      const payload = {
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        institution: formData.institution || 'Not Specified',
+        fieldOfStudy: formData.fieldOfStudy || 'Not Specified',
+        role: formData.role || 'General',
+        skills: Array.isArray(formData.skills) && formData.skills.length > 0 ? formData.skills.join(', ') : (formData.skills || 'Not Specified'),
+        portfolioLink: formData.portfolioLink || '',
+        company: '', // honeypot
+        resume: resumeData,
+        portfolio: portfolioData
+      };
 
       const response = await fetch('/api/internship', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload),
+        body: JSON.stringify(payload)
       });
 
+      const result = await response.json();
+      
       if (!response.ok) {
-        throw new Error('Failed to submit application.');
+        if (result.details && result.details._errors) {
+          throw new Error(result.details._errors.join(', '));
+        } else if (result.details) {
+          // Flatten zod errors
+          const errorMsgs = [];
+          for (const key in result.details) {
+            if (result.details[key]._errors) {
+              errorMsgs.push(`${key}: ${result.details[key]._errors.join(', ')}`);
+            }
+          }
+          throw new Error(errorMsgs.length > 0 ? errorMsgs.join(' | ') : 'Validation Error');
+        }
+        throw new Error(result.error || 'Failed to submit application');
       }
 
-      setSubmitStatus('success');
-      nextStep(); // Move to success step (Step 6)
-    } catch (err) {
-      setErrors({ submit: err.message || 'An unexpected error occurred.' });
+      setIsSuccess(true);
+    } catch (error) {
+      console.error('Submission error:', error);
+      setErrors({ submit: error.message || 'Something went wrong. Please try again.' });
     } finally {
       setIsSubmitting(false);
     }
   };
 
+  if (!isOpen) return null;
+
+  const CurrentComponent = STEPS[currentStep].component;
+
   return (
     <AnimatePresence>
       {isOpen && (
-        <>
-          {/* Backdrop */}
-          <motion.div
+        <div className="fixed inset-0 z-50 flex items-start justify-center p-4 sm:p-6 overflow-y-auto overscroll-contain">
+          <motion.div 
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            onClick={handleClose}
-            className="fixed inset-0 bg-black/60 backdrop-blur-md z-[100]"
+            onClick={onClose}
+            className="fixed inset-0 bg-black/80 backdrop-blur-sm cursor-pointer"
           />
           
-          {/* Modal */}
-          <motion.div
-            initial={{ y: '100%', opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            exit={{ y: '100%', opacity: 0 }}
-            transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-            className="fixed bottom-0 left-0 md:left-1/2 md:-translate-x-1/2 w-full md:w-[600px] h-[90vh] md:h-[80vh] md:bottom-auto md:top-1/2 md:-translate-y-1/2 bg-white/5 backdrop-blur-md md:rounded-3xl rounded-t-3xl border border-white/10 z-[101] flex flex-col shadow-2xl overflow-hidden"
+          <motion.div 
+            initial={{ opacity: 0, scale: 0.95, y: 20 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            exit={{ opacity: 0, scale: 0.95, y: 20 }}
+            className="relative w-full max-w-3xl bg-[#0a0a0a] border border-white/10 rounded-2xl md:rounded-[2rem] shadow-2xl flex flex-col my-auto z-10"
           >
-            {/* Header */}
-            <div className="flex justify-between items-center p-6 border-b border-white/10 shrink-0">
-              <span className="font-mono text-xs tracking-widest uppercase text-white/50">
-                {currentStep < 6 ? `Step ${currentStep} of 5` : 'Application Complete'}
-              </span>
+            {/* Close Button */}
+            {!isSuccess && (
               <button 
-                onClick={handleClose}
-                className="p-2 rounded-full hover:bg-white/10 transition-colors cursor-none"
-                onMouseEnter={() => updateCursor({ active: true })}
-                onMouseLeave={resetCursor}
+                onClick={onClose}
+                className="absolute top-4 right-4 md:top-6 md:right-6 p-2 bg-white/5 hover:bg-white/10 border border-white/10 rounded-full text-white/70 hover:text-white transition-colors z-20"
               >
                 <X size={20} />
               </button>
-            </div>
-
-            {/* Progress Bar */}
-            {currentStep < 6 && (
-              <div className="w-full h-1 bg-white/5 shrink-0">
-                <motion.div 
-                  className="h-full bg-accent"
-                  initial={{ width: 0 }}
-                  animate={{ width: `${(currentStep / 5) * 100}%` }}
-                  transition={{ duration: 0.3 }}
-                />
-              </div>
             )}
 
-            {/* Content Area */}
-            <div className="flex-1 overflow-y-auto custom-scrollbar p-6 md:p-8" data-lenis-prevent="true">
-              {submitStatus === 'success' ? (
-                <SuccessAnimation onClose={handleClose} />
-              ) : (
-                <AnimatePresence mode="wait">
-                  <motion.div
-                    key={currentStep}
-                    initial={{ x: 20, opacity: 0 }}
-                    animate={{ x: 0, opacity: 1 }}
-                    exit={{ x: -20, opacity: 0 }}
-                    transition={{ duration: 0.2 }}
-                  >
-                    {currentStep === 1 && <StepPersonal formData={formData} updateFormData={updateFormData} errors={errors} />}
-                    {currentStep === 2 && <StepEducation formData={formData} updateFormData={updateFormData} errors={errors} />}
-                    {currentStep === 3 && <StepSkills formData={formData} updateFormData={updateFormData} errors={errors} />}
-                    {currentStep === 4 && <StepPortfolio formData={formData} updateFormData={updateFormData} files={files} updateFiles={updateFiles} errors={errors} />}
-                    {currentStep === 5 && <StepReview formData={formData} files={files} />}
-                    
-                    {errors.submit && (
-                      <div className="mt-4 p-4 bg-red-500/10 border border-red-500/20 text-red-400 rounded-lg text-sm">
-                        {errors.submit}
+            {isSuccess ? (
+              <SuccessAnimation onClose={onClose} />
+            ) : (
+              <div className="flex flex-col h-full overflow-hidden rounded-2xl md:rounded-[2rem]">
+                {/* Header & Progress */}
+                <div className="p-6 md:p-10 pb-6 border-b border-white/5 shrink-0">
+                  <div className="flex items-center gap-2 mb-6">
+                    {STEPS.map((step, idx) => (
+                      <div key={step.id} className="flex-1 flex flex-col gap-2">
+                        <div className={`h-1 rounded-full transition-colors duration-500 ${idx <= currentStep ? 'bg-[#D4AF37]' : 'bg-white/10'}`} />
+                        <span className={`text-[10px] uppercase font-mono tracking-wider transition-colors duration-500 hidden md:block ${idx <= currentStep ? 'text-[#D4AF37]' : 'text-white/30'}`}>
+                          {step.title}
+                        </span>
                       </div>
-                    )}
-                  </motion.div>
-                </AnimatePresence>
-              )}
-            </div>
+                    ))}
+                  </div>
+                  
+                  {selectedRole && currentStep === 0 && (
+                    <div className="inline-block px-3 py-1 bg-[#D4AF37]/10 border border-[#D4AF37]/30 text-[#D4AF37] text-xs font-mono tracking-widest uppercase rounded-full mb-4">
+                      Applying for: {selectedRole}
+                    </div>
+                  )}
+                </div>
 
-            {/* Footer / Navigation */}
-            {currentStep < 6 && (
-              <div className="p-4 md:p-6 border-t border-white/10 flex justify-between items-center shrink-0 bg-white/5 backdrop-blur-md z-10">
-                <button
-                  onClick={prevStep}
-                  disabled={currentStep === 1 || isSubmitting}
-                  className={`flex items-center gap-2 text-[10px] md:text-xs font-mono tracking-widest uppercase transition-colors cursor-none ${currentStep === 1 ? 'text-transparent pointer-events-none' : 'text-white/50 hover:text-white'}`}
-                  onMouseEnter={() => updateCursor({ active: true })}
-                  onMouseLeave={resetCursor}
-                >
-                  <ArrowLeft size={16} /> <span className="hidden sm:inline">Back</span>
-                </button>
+                {/* Form Content */}
+                <div className="p-6 md:p-10 overflow-y-auto custom-scrollbar flex-grow">
+                  <AnimatePresence mode="wait">
+                    <motion.div
+                      key={currentStep}
+                      initial={{ opacity: 0, x: 20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      exit={{ opacity: 0, x: -20 }}
+                      transition={{ duration: 0.3 }}
+                    >
+                      <CurrentComponent 
+                        formData={formData} 
+                        updateFormData={updateFormData} 
+                        files={files}
+                        updateFiles={updateFiles}
+                        errors={errors} 
+                      />
+                      {errors.submit && (
+                        <div className="mt-4 p-3 bg-red-500/10 border border-red-500/30 rounded text-red-400 text-sm font-sans text-center">
+                          {errors.submit}
+                        </div>
+                      )}
+                    </motion.div>
+                  </AnimatePresence>
+                </div>
 
-                {currentStep < 5 ? (
-                  <button
-                    onClick={handleNext}
-                    className="flex items-center gap-2 px-6 py-3 bg-white/5 border border-white/10 rounded-full text-xs font-mono tracking-widest uppercase hover:bg-white/10 hover:border-white/30 transition-all cursor-none"
-                    onMouseEnter={() => updateCursor({ active: true })}
-                    onMouseLeave={resetCursor}
+                {/* Footer Controls */}
+                <div className="p-6 md:p-10 pt-6 border-t border-white/5 bg-[#050505] flex items-center justify-between shrink-0">
+                  <button 
+                    onClick={handleBack}
+                    className={`text-xs font-mono tracking-widest uppercase text-white/50 hover:text-white transition-colors px-4 py-2 ${currentStep === 0 ? 'opacity-0 pointer-events-none' : ''}`}
                   >
-                    Continue <ArrowRight size={16} />
+                    ← Back
                   </button>
-                ) : (
-                  <button
-                    onClick={handleSubmit}
-                    disabled={isSubmitting}
-                    className="flex items-center gap-2 px-8 py-3 bg-accent text-bg rounded-full text-xs font-mono font-medium tracking-widest uppercase hover:bg-white transition-all cursor-none disabled:opacity-50"
-                    onMouseEnter={() => !isSubmitting && updateCursor({ active: true })}
-                    onMouseLeave={resetCursor}
-                  >
-                    {isSubmitting ? (
-                      <svg className="animate-spin h-4 w-4 text-bg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>
-                    ) : 'Submit'}
-                  </button>
-                )}
+                  
+                  {currentStep < STEPS.length - 1 ? (
+                    <GsapButton onClick={handleNext} variant="primary" className="py-2.5 px-8 text-xs tracking-widest">
+                      Next Step →
+                    </GsapButton>
+                  ) : (
+                    <GsapButton 
+                      onClick={handleSubmit} 
+                      variant="primary" 
+                      className="py-2.5 px-8 text-xs tracking-widest bg-white text-black hover:bg-gray-200"
+                    >
+                      {isSubmitting ? 'Submitting...' : 'Submit Application'}
+                    </GsapButton>
+                  )}
+                </div>
               </div>
             )}
           </motion.div>
-        </>
+        </div>
       )}
     </AnimatePresence>
   );

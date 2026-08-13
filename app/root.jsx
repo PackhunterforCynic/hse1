@@ -89,9 +89,33 @@ export function Layout({ children }) {
         <link rel="alternate icon" href="/icon.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="google-site-verification" content="nCCuFORTrwEqEaOxVVE49x0IJMf5ISz52eAXWYXEIiI" />
+        <meta name="google-site-verification" content="ZCpkRcE0jbIKfvvhgdw8zNbSD-_fxY_K809gEl9U-E4" />
+        
+        <title>Havilah | Media & Growth</title>
+        <meta name="description" content="Havilah Studio is a premier creative media agency specializing in cinematic ad video production, commercial photography, digital media strategy, brand films, and state-of-the-art visual storytelling." />
+        <meta name="keywords" content="photography, digital media, ad video, commercial video production, brand storytelling, creative media agency, cinematic films, digital experiences, Havilah, growth branding, content creation, video advertising, commercial photography, brand films, studio media, visual production, corporate video, social media ads, film agency, portrait photography, editorial shoots, drone cinematography" />
+        <meta name="author" content="Havilah Pro" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <link rel="canonical" href="https://havilahpro.com/" />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://havilahpro.com/" />
+        <meta property="og:title" content="Havilah | Photography, Digital Media & Ad Video Production" />
+        <meta property="og:description" content="We craft award-winning ad videos, commercial photography, and high-performance digital media that elevate brands and captivate audiences." />
+        <meta property="og:image" content="/icon.svg" />
+        <meta property="og:site_name" content="Havilah Studio" />
+        <meta property="og:locale" content="en_US" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://havilahpro.com/" />
+        <meta name="twitter:title" content="Havilah | Photography, Digital Media & Ad Video Production" />
+        <meta name="twitter:description" content="Specializing in cinematic ad videos, commercial photography, and high-impact digital media strategy." />
+        <meta name="twitter:image" content="/icon.svg" />
+        
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Hanken+Grotesk:ital,wght@0,300..700;1,300..700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" async></script>
         <Meta />
         <Links />
       </head>
@@ -119,11 +143,11 @@ export default function App() {
             <AIProvider>
               <LenisSetup pathname={location.pathname} />
               <Preloader />
-              <MainLayout>
-                <AnimatePresence mode="wait">
-                  <Outlet key={location.pathname} />
-                </AnimatePresence>
-              </MainLayout>
+              {location.pathname.startsWith('/admin') ? (
+                <Outlet />
+              ) : (
+                <MainLayout />
+              )}
             </AIProvider>
           </CursorProvider>
         </PreloaderProvider>

@@ -26,7 +26,7 @@ export const internshipSchema = z.object({
   // Step 1: Personal
   name: z.string().min(2, "Name is required"),
   email: z.string().min(1, "Email is required").regex(emailRegex, "Please enter a valid email address"),
-  phone: z.string().min(1, "Phone number is required").regex(phoneRegex, "Phone must contain only digits, +, or hyphens (min 7 numbers)"),
+  phone: z.string().min(6, "Phone must be at least 6 characters").max(20, "Phone is too long"),
   // Step 2: Education
   institution: z.string().min(2, "Institution is required"),
   fieldOfStudy: z.string().min(2, "Field of study is required"),

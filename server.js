@@ -7,6 +7,7 @@ import { fileURLToPath } from 'node:url';
 import contactHandler from './api/contact.js';
 import chatHandler from './api/chat.js';
 import internshipHandler from './api/internship.js';
+import internshipRolesHandler from './api/internshipRoles.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -94,6 +95,8 @@ const server = http.createServer(async (req, res) => {
           await chatHandler(req, res);
         } else if (pathname === '/api/internship' && req.method === 'POST') {
           await internshipHandler(req, res);
+        } else if (pathname === '/api/internship-roles' && req.method === 'GET') {
+          await internshipRolesHandler(req, res);
         } else {
           res.status(404).json({ error: 'API Route Not Found' });
         }

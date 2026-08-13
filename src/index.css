@@ -13,12 +13,59 @@
   --font-sans: 'Inter', sans-serif;
   --font-mono: 'Inter', monospace;
   --font-serif: 'Fraunces', serif;
+  
+  /* Radii Tokens */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-2xl: 2rem;
+
+  /* Z-index Tokens */
+  --z-below: -1;
+  --z-base: 0;
+  --z-above: 10;
+  --z-nav: 50;
+  --z-drawer: 80;
+  --z-modal: 100;
+  --z-overlay: 200;
+  --z-toast: 300;
 }
 
 @layer base {
   :root {
     background-color: var(--color-bg);
     color: var(--color-text);
+
+    /* --- Fluid Typography System --- */
+    --text-display-xl: clamp(3rem, 5vw + 2rem, 8rem);
+    --text-display-l: clamp(2.5rem, 4vw + 1.5rem, 6rem);
+    --text-heading-xl: clamp(2rem, 3vw + 1rem, 4.5rem);
+    --text-heading-l: clamp(1.75rem, 2.5vw + 1rem, 3.5rem);
+    --text-heading-m: clamp(1.5rem, 2vw + 0.8rem, 2.5rem);
+    --text-heading-s: clamp(1.25rem, 1.5vw + 0.5rem, 1.75rem);
+    --text-body-l: clamp(1.125rem, 1vw + 0.5rem, 1.375rem);
+    --text-body: clamp(1rem, 0.5vw + 0.5rem, 1.125rem);
+    --text-body-sm: clamp(0.875rem, 0.3vw + 0.5rem, 1rem);
+    --text-caption: clamp(0.75rem, 0.2vw + 0.5rem, 0.875rem);
+    
+    /* --- Fluid Spacing System --- */
+    --space-1: clamp(0.25rem, 0.5vw, 0.5rem); /* ~4-8px */
+    --space-2: clamp(0.5rem, 1vw, 1rem);      /* ~8-16px */
+    --space-3: clamp(1rem, 2vw, 1.5rem);      /* ~16-24px */
+    --space-4: clamp(1.5rem, 3vw, 2.5rem);    /* ~24-40px */
+    --space-5: clamp(2rem, 4vw, 4rem);        /* ~32-64px */
+    --space-6: clamp(3rem, 6vw, 6rem);        /* ~48-96px */
+    --space-7: clamp(4rem, 8vw, 8rem);        /* ~64-128px */
+    --space-8: clamp(6rem, 12vw, 12rem);      /* ~96-192px */
+
+    /* --- Motion & Animation Tokens --- */
+    --duration-fast: 200ms;
+    --duration-normal: 400ms;
+    --duration-slow: 700ms;
+    --duration-cinematic: 1200ms;
+    --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+    --ease-in-expo: cubic-bezier(0.7, 0, 0.84, 0);
   }
   
   html, body {

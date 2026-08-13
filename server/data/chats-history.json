@@ -1,8 +1,40 @@
 {
-  "updatedAt": "2026-08-07T05:13:45.687Z",
-  "totalSessions": 1,
-  "totalMessages": 9,
+  "updatedAt": "2026-08-09T14:53:46.047Z",
+  "totalSessions": 2,
+  "totalMessages": 12,
   "sessions": [
+    {
+      "id": "sess_1786282490086_6sfsu",
+      "userName": "robin",
+      "pageContext": "/",
+      "startTime": "2026-08-09T14:53:46.047Z",
+      "lastUpdated": "2026-08-09T14:53:46.047Z",
+      "messageCount": 3,
+      "topics": [
+        "Cinematography",
+        "Photography",
+        "Weddings",
+        "Web Development",
+        "Growth & Strategy"
+      ],
+      "messages": [
+        {
+          "role": "assistant",
+          "content": "Good evening, robin. Welcome to **Havilah Studio**.\n\nI am your AI Creative Concierge. At the convergence of cinema, narrative art, and growth strategy, we engineer timeless visual legacies for visionary brands and leaders.\n\nWhether you are exploring cinematic film production, bespoke aesthetics, or brand architecture—how may I assist in authoring your vision today?",
+          "timestamp": "2026-08-09T14:53:46.047Z"
+        },
+        {
+          "role": "user",
+          "content": "Tell me about your wedding projects",
+          "timestamp": "2026-08-09T14:53:46.047Z"
+        },
+        {
+          "role": "assistant",
+          "content": "Welcome, Robin.\n\nAt Havilah Studio, we approach weddings not as mere events to document, but as haute-couture visual narratives. We blend atmospheric, cinematic filmmaking with high-fashion editorial photography to craft timeless, emotive films and imagery for discerning couples.\n\nOur signature wedding services include:\n\n* **Cinematic Feature Films:** Narrative-driven, multi-cam productions crafted with cinematic color grading and sound design.\n* **Editorial Photography:** High-fashion, candid reportage and portraiture designed for fine-art print and digital archives.\n* **Destination & Legacy Celebrations:** End-to-end production coverage across India and global destinations, tailored for intimate gatherings or multi-day galas.\n\nWould you like me to guide you to a curated reel of our wedding films, or would you prefer to schedule a private consultation with our Creative Director to discuss your upcoming event?",
+          "timestamp": "2026-08-09T14:53:46.047Z"
+        }
+      ]
+    },
     {
       "id": "sess_1786079496505_zan3x",
       "userName": "Robin",

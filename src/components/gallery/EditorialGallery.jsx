@@ -30,11 +30,9 @@ const OptimizedVideo = ({ src, poster }) => {
       onMouseLeave={resetCursor}
     >
       <img 
-        src={poster || src} // If no poster is provided, browsers may struggle, but it's a fallback
+        data-src={poster || src}
         alt="Video thumbnail"
-        loading="lazy"
-        decoding="async"
-        className="w-full h-full object-cover filter brightness-[0.8] group-hover:brightness-100 transition-all duration-700"
+        className="lazyload w-full h-full object-cover filter brightness-[0.8] group-hover:brightness-100 transition-all duration-700"
       />
       <div className="absolute inset-0 flex items-center justify-center">
         <div className="w-16 h-16 md:w-24 md:h-24 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center border border-white/20 group-hover:scale-110 transition-transform duration-500">
@@ -110,11 +108,9 @@ export default function EditorialGallery({ media }) {
               <OptimizedVideo src={item.src} poster={item.poster} />
             ) : (
               <img 
-                src={item.src} 
+                data-src={item.src} 
                 alt=""
-                loading="lazy"
-                decoding="async"
-                className="w-full h-full object-cover"
+                className="lazyload w-full h-full object-cover"
               />
             )}
           </motion.div>

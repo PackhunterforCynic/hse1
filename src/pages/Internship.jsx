@@ -6,6 +6,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import Hero from '../components/internship/Hero';
 import StudioCulture from '../components/internship/StudioCulture';
 import Benefits from '../components/internship/Benefits';
+import Roadmap from '../components/internship/Roadmap';
 import ProgramGrid from '../components/internship/ProgramGrid';
 import AICareerAssistant from '../components/internship/AICareerAssistant';
 import FAQ from '../components/internship/FAQ';
@@ -27,7 +28,7 @@ export default function Internship() {
     <div className="w-full min-h-screen bg-primary relative overflow-x-hidden">
       <SEO 
         title="Havilah | Apprenticeship" 
-        description="Join the Havilah Studio apprenticeship program. Learn commercial photography, video production, and digital strategy hands-on."
+        description="Join the Havilah Pro apprenticeship program. Learn commercial photography, video production, and digital strategy hands-on."
         path="/internship"
       />
 
@@ -36,8 +37,9 @@ export default function Internship() {
         style={{ y: yBg }} 
         className="fixed inset-0 w-full h-full pointer-events-none z-0"
       >
-        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-accent/5 rounded-full blur-[120px] mix-blend-screen" />
-        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-blue-500/5 rounded-full blur-[150px] mix-blend-screen" />
+        {/* Animated Background Ambience */}
+        <div className="absolute top-0 right-0 w-[clamp(300px,40vw,500px)] aspect-square bg-accent/5 rounded-full blur-[60px] sm:blur-[120px] mix-blend-screen" />
+        <div className="absolute bottom-0 left-0 w-[clamp(300px,50vw,600px)] aspect-square bg-blue-500/5 rounded-full blur-[60px] sm:blur-[150px] mix-blend-screen" />
       </motion.div>
 
       {/* Main Content */}
@@ -45,6 +47,7 @@ export default function Internship() {
         <Hero onApply={() => handleApplyClick()} />
         <StudioCulture />
         <Benefits />
+        <Roadmap />
         <ProgramGrid onApply={handleApplyClick} />
         <AICareerAssistant />
         <FAQ />

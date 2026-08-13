@@ -1,3 +1,5 @@
+import { useLoaderData } from 'react-router';
+import { db } from '../lib/db.server';
 import { Helmet } from 'react-helmet-async';
 import SEO from '../components/common/SEO';
 import Hero from '../components/Hero';
@@ -9,11 +11,25 @@ import ClientsMarquee from '../components/home/ClientsMarquee';
 import Testimonials from '../components/home/Testimonials';
 import ContactCTA from '../components/home/ContactCTA';
 
+export async function loader() {
+  const testimonials = await db.testimonial.findMany({
+    where: { 
+      approved: true, 
+      isDeleted: false,
+      featured: true
+    },
+    orderBy: { createdAt: 'desc' }
+  });
+  return { testimonials };
+}
+
 export default function Home() { 
+  const { testimonials } = useLoaderData();
+
   return (
     <>
       <SEO 
-        title="Havilah | Photography, Digital Media & Ad Video Production" 
+        title="Havilah | Media & Growth" 
         path="/" 
       />
       
@@ -27,7 +43,7 @@ export default function Home() {
       <AboutSection />
       <ServicesPreview />
       <ClientsMarquee />
-      <Testimonials />
+      <Testimonials testimonials={testimonials} />
       <ContactCTA />
 
     </>

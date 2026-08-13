@@ -148,9 +148,9 @@ export default function Contact() {
         className="w-full lg:w-1/2 h-[50vh] lg:h-screen relative overflow-hidden hidden md:block"
       >
         <video
-          src="/videos/Srusti Pratik/Haldi Pratik Srusti.mp4"
+          data-src="/videos/Srusti Pratik/Haldi Pratik Srusti.mp4"
           autoPlay muted loop playsInline
-          className="absolute inset-0 w-full h-full object-cover filter grayscale"
+          className="lazyload absolute inset-0 w-full h-full object-cover filter grayscale"
         />
         <div className="absolute inset-0 bg-black/60 mix-blend-multiply" />
         <div className="absolute inset-0 flex flex-col items-center justify-center p-12 text-center">
@@ -462,7 +462,7 @@ export default function Contact() {
             <p className="font-sans text-lg text-white/80 leading-relaxed">Havilah,<br />Kothanur, Bangalore<br />560077, India </p>
           </div>
           
-          <div className="grid grid-cols-1 gap-4 w-full sm:w-[320px]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full">
             <p className="text-xs font-mono tracking-widest uppercase text-white/50 mb-2 sm:text-right hidden sm:block">Socials</p>
             {socialLinks.map((social) => (
               <a 
